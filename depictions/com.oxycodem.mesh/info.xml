@@ -1,0 +1,32 @@
+<packageInfo>
+    <bundleId>com.oxycodem.mesh</bundleId>
+    <name>Mesh</name>
+    <version>1.0</version>
+    <descriptions>
+        <description>
+            Bypass detection jailbreak in Mesh dnevnik
+        </description>
+        <description>
+            Bypass jailbreak detection
+        </description>
+    </descriptions>
+    <compatibility>
+        <miniOS>10.0</miniOS>
+        <maxiOS>17.0</maxiOS>
+    </compatibility>
+    <dependencies>
+        <dependency>mobilesubstrate</dependency>
+        <dependency>some other dependency</dependency>
+    </dependencies>
+    <changelog>
+        <change>
+            <changeVersion>V1.0 </changeVersion>
+            <changeDescription>Bypass detection jailbreak in Mesh dnevnik</changeDescription>
+            <changeDescription>Bypass detection jailbreak in Mesh dnevnik</changeDescription>
+        </change>
+        <change>
+            <changeVersion>V1.0</changeVersion>
+            <changeDescription>Initial Release</changeDescription>
+        </change>
+    </changelog>
+</packageInfo>

@@ -50,6 +50,22 @@ Description: Multiple containers for your applications!
 Author: opa334
 Name: Crane
 
+Package: com.oxycodem.mesh
+Version: 0.0.1-3+debug
+Architecture: iphoneos-arm64
+Maintainer: Oxycodem
+Installed-Size: 60
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.oxycodem.mesh_0.0.1-3+debug_iphoneos-arm64.deb
+Size: 3356
+MD5sum: bc90e9618f711142d74a026b97ac3741
+SHA1: b64cc158943d3370f6e1d0d35cb51ff24fb2ab04
+SHA256: 8d8a1bd4e05c699d2ede3f92a1a200e2c5bc0e324797b8a01be6b80415746295
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: Oxycodem
+Name: Mesh
+
 Package: com.pixelomer.oneko
 Version: 1.0.0
 Architecture: iphoneos-arm64
@@ -69,21 +85,40 @@ Depiction: https://chariz.com/get/oneko
 Icon: https://img.chariz.cloud/icon/oneko/icon@3x.png
 Name: Oneko
 
-Package: com.snail.always120.global
-Version: 1.1.7
-Architecture: iphoneos-arm
-Maintainer: Snail <mu514983786@gmail.com>
-Installed-Size: 760
-Depends: mobilesubstrate (>= 0.9.5000),preferenceloader,com.opa334.altlist
-Filename: ./debs/com.snail.always120.global_v1.1.7_iphoneos-arm.deb
-Size: 193900
-MD5sum: 46153687cbb50a35d536106913cb4ffe
-SHA1: 848396bea1ac4179a01932c4913a33a524160417
-SHA256: 7d92ce4f447899b646151b308241034a5abe047050c7eead5b879a0fdaff9a86
+Package: lilliana.filzacrack
+Version: 0.0.6
+Architecture: iphoneos-arm64
+Maintainer: Lilliana
+Installed-Size: 136
+Depends: mobilesubstrate, firmware (>= 12.2)
+Filename: ./debs/lilliana.filzacrack_v0.0.6_iphoneos-arm64.deb
+Size: 21226
+MD5sum: 5aa5b7ed1cf33ef1907d903b72eeab10
+SHA1: aec744001cd888b9c3099415a67366dce26612f2
+SHA256: 345cb4ade708abb1598fb40af0facdb50e4c5f18ba6ecbfbf7c797b70f11c24a
 Section: Tweaks
-Description: Make iOS 15/16 ProMotion Devices auto-adpat/reach to 120Hz. // 使iOS 15/16越狱高刷机型自适应/锁定120HZ。
-Author: Snail <mu514983786@gmail.com>
-Name: Always120
+Description: An awesome Jinx tweak!
+Author: Lilliana
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/FilzaCrack.json&name=FilzaCrack&dev=Lilliana
+Icon: https://paisseon.github.io/icons/FilzaCrack.png
+Name: FilzaCrack
+Sileodepiction: https://paisseon.github.io/depictions/FilzaCrack.json
+
+Package: modmenu
+Version: 1.1
+Architecture: iphoneos-arm64
+Maintainer: Atri112
+Installed-Size: 5640
+Depends: mobilesubstrate
+Filename: ./debs/modmenu_1.1_iphoneos-arm64.deb
+Size: 947852
+MD5sum: 0b5f2ea4d298d351fcaab3f4efd25c3d
+SHA1: 4978a6cf3010379969891ec8e2380b0278950cfb
+SHA256: 5911cb5dca9cee0465dac542e8bfbfefe6b7dcac8a08c4ad8dded6142f2f31c8
+Section: Tweaks
+Description: Critical Strike CS: Online FPS Mod Menu by Atri112!
+Author: Atri112
+Name: Critical Strike CS: Online FPS Mod Menu
 
 Package: se.geometric.intelligentpass5
 Version: 1.0.2
@@ -104,4 +139,22 @@ Depiction: https://store.geometricsoftware.se/packages/se.geometric.intelligentp
 Icon: file:///Library/PreferenceBundles/IntelligentPass.bundle/store.png
 Name: IntelligentPass 5
 Sileodepiction: https://apt.geometricsoftware.se/package/se.geometric.intelligentpass5/depiction
+
+Package: xyz.cypwn.instantcamera
+Version: 1.1.1
+Architecture: iphoneos-arm64
+Maintainer: CyPwn
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 15.0), com.ginsu.comet
+Filename: ./debs/xyz.cypwn.instantcamera_v1.1.1_iphoneos-arm64.deb
+Size: 157404
+MD5sum: 030fd4e6f3889bd6a7da6180f460aff8
+SHA1: b50a4071e7cebd3461c17d511100c1110ff8b718
+SHA256: 48c8ed55eb565a7de990df63325f3b2d296e35da672f10dfb2a14dddf194ddfe
+Section: Tweaks
+Description: Capture photos instantly using the LS button
+Author: sourcelocation
+Depiction: https://repo.cypwn.xyz/depiction/1490
+Icon: https://media.havoc.app/64a18e1be9bc2a657c8b1d6f
+Name: InstantCamera
+Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/1490
 
