@@ -1,0 +1,107 @@
+Package: com.leftyfl1p.carbridge13
+Version: 2.0.13
+Architecture: iphoneos-arm64
+Maintainer: leftyfl1p
+Installed-Size: 7344
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), preferenceloader, com.opa334.altlist (>= 1.0.10)
+Conflicts: com.leftyfl1p.carplay, com.eason.carplay, com.eason.carplay.ios11, com.cortex.carplayenable
+Filename: ./debs/com.leftyfl1p.carbridge13_v2.0.13_iphoneos-arm64.deb
+Size: 434160
+MD5sum: 45411c8ec866332020e7923b8383a21a
+SHA1: 7ac4c2e79800a2d02b9c33b3cd66e881fed56066
+SHA256: 30c9985dab9f3e39365eef44d7ed861b3d378e40bdb1144a99370770e441d3fe
+Section: Tweaks
+Description: Open any app in CarPlay!
+Tag: cydia::commercial
+Author: leftyfl1p <carbridge@havoc.app>
+Depiction: https://havoc.app/package/carbridge
+Name: CarBridge
+
+Package: com.mtac.lynxtwo
+Version: 2.5.3
+Architecture: iphoneos-arm64
+Maintainer: MTAC
+Installed-Size: 2848
+Depends: mobilesubstrate, firmware (>= 14.0), preferenceloader, ws.hbang.common
+Filename: ./debs/com.mtac.lynxtwo_v2.5.3_iphoneos-arm64.deb
+Size: 653282
+MD5sum: 32d7e71fd31a52fcf84fef816e433681
+SHA1: 4544482ba6f4a8fd2d020ce9001a19e3457e7312
+SHA256: 4ec0698763c02bcdeda94a6fb87a8460908acf29cdd6d084c1077d4c1e6b42bf
+Section: Tweaks
+Description: Ultimate iDevice Customization for iOS 14, 15 & 16
+Author: MTAC
+Name: Lynx 2
+
+Package: com.opa334.crane
+Version: 1.3.16-2
+Architecture: iphoneos-arm64
+Maintainer: opa334
+Installed-Size: 3212
+Depends: firmware (>=11.0), mobilesubstrate, preferenceloader, com.opa334.altlist (>=1.0.5), com.opa334.libsandy, com.opa334.libundirect (>=1.1.4) | firmware (<<14.0)
+Conflicts: com.opa334.cranelite, com.opa334.crane13lite, com.opa334.crane13, com.rpgfarm.slices3, com.subdiox.slices2, com.expetelek.slices
+Filename: ./debs/com.opa334.crane_v1.3.16-2_iphoneos-arm64.deb
+Size: 600406
+MD5sum: 7e6a934d6eb8f85910d9bf7d67dff11d
+SHA1: 4fac9fe0b175122f296afde6d16bfa03ec4d846d
+SHA256: d6874038f0a242adedfe377f2f9dbe4b5195678cc648aeed23c2af1217982190
+Section: Tweaks
+Description: Multiple containers for your applications!
+Author: opa334
+Name: Crane
+
+Package: com.pixelomer.oneko
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: pixelomer <contact@pixelomer.com>
+Installed-Size: 193
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0)
+Filename: ./debs/com.pixelomer.oneko_v1.0.0_iphoneos-arm64.deb
+Size: 15112
+MD5sum: f6753040dae1d6392165c5d8d37eba70
+SHA1: b4e1e09404db8f663ba8bb6b9ff4d01d20fa3241
+SHA256: 1f4029fab2a8fbfae5025cb442e65df1037b3990440c0312ee2c7745f36d0f85
+Section: Tweaks
+Description: Oneko for iOS
+Tag: compatible_min::ios15.0
+Author: pixelomer <contact@pixelomer.com>
+Depiction: https://chariz.com/get/oneko
+Icon: https://img.chariz.cloud/icon/oneko/icon@3x.png
+Name: Oneko
+
+Package: com.snail.always120.global
+Version: 1.1.7
+Architecture: iphoneos-arm
+Maintainer: Snail <mu514983786@gmail.com>
+Installed-Size: 760
+Depends: mobilesubstrate (>= 0.9.5000),preferenceloader,com.opa334.altlist
+Filename: ./debs/com.snail.always120.global_v1.1.7_iphoneos-arm.deb
+Size: 193900
+MD5sum: 46153687cbb50a35d536106913cb4ffe
+SHA1: 848396bea1ac4179a01932c4913a33a524160417
+SHA256: 7d92ce4f447899b646151b308241034a5abe047050c7eead5b879a0fdaff9a86
+Section: Tweaks
+Description: Make iOS 15/16 ProMotion Devices auto-adpat/reach to 120Hz. // 使iOS 15/16越狱高刷机型自适应/锁定120HZ。
+Author: Snail <mu514983786@gmail.com>
+Name: Always120
+
+Package: se.geometric.intelligentpass5
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Geometric Software
+Installed-Size: 444
+Depends: mobilesubstrate, firmware(>=15.0), firmware(<<17), preferenceloader, se.geometric.graphite
+Filename: ./debs/se.geometric.intelligentpass5_v1.0.2_iphoneos-arm64.deb
+Size: 82762
+MD5sum: cf980c1de7da9f38bbb662a6c295f67d
+SHA1: 601a4161077aa8ac84bf19fe2396476dfd0577d2
+SHA256: b590a9ac6081989201cd903fc6aca78a3287fcd33d74b1ae9af52844cdb8c56d
+Section: Tweaks
+Description: Disable passcode when not necessary
+Tag: cydia::commercial
+Author: Geometric Software
+Depiction: https://store.geometricsoftware.se/packages/se.geometric.intelligentpass5
+Icon: file:///Library/PreferenceBundles/IntelligentPass.bundle/store.png
+Name: IntelligentPass 5
+Sileodepiction: https://apt.geometricsoftware.se/package/se.geometric.intelligentpass5/depiction
+
