@@ -17,6 +17,23 @@ Author: leftyfl1p <carbridge@havoc.app>
 Depiction: https://havoc.app/package/carbridge
 Name: CarBridge
 
+Package: com.lns.pogr
+Version: 0.4.0~prerelease1
+Architecture: iphoneos-arm64
+Maintainer: Ruphane
+Installed-Size: 648
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.lns.pogr_v0.4.0~prerelease1_iphoneos-arm64.deb
+Size: 80104
+MD5sum: 53e08e1abb651207ba6781609fc21d70
+SHA1: fe9e2281a2f06edc185aa5385c8d798485f77ab3
+SHA256: d180b589c0a2710deede5f8d7ebd56a0f73b20e8336472c615085cb4e19b799e
+Section: Tweaks
+Description: 将AirPods Pro 2视为AirPods Pro，使其在旧操作系统上更好地工作（仅适用于少数iOS版本），支持iOS 16和USB-C版本的AirPods Pro 2
+Author: Ruphane
+Icon: https://TrollStoreX.Github.io/sileodepiction/repo_pic/AirPods2Pro.png
+Name: PodsGrant
+
 Package: com.mtac.lynxtwo
 Version: 2.5.3
 Architecture: iphoneos-arm64
@@ -85,6 +102,103 @@ Depiction: https://chariz.com/get/oneko
 Icon: https://img.chariz.cloud/icon/oneko/icon@3x.png
 Name: Oneko
 
+Package: com.tomaszpoliszuk.lockscreenbatterymagsafe
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 168
+Depends: firmware (>= 14.1), mobilesubstrate
+Filename: ./debs/com.tomaszpoliszuk.lockscreenbatterymagsafe_v1.0.4_iphoneos-arm64.deb
+Size: 4550
+MD5sum: 24e3342d8bcbef5ec8dec97740c4cf7a
+SHA1: 5a7af79cec3ea15c8f7b5ce907cc24fd80746a23
+SHA256: e7ad57e95f3312ad05d88849e44eec5ccd2dbd9d2f0b6c46a8908063905353b6
+Section: Tweaks
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=lockscreenbatterymagsafeDp
+Description: Enable new native MagSafe charging view on lockscreen when connecting device to power source
+Tag: purpose::extension
+Author: Tomasz Poliszuk
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=lockscreenbatterymagsafeDp
+Dev: tomaszpoliszuk
+Name: MagSafe Enabler
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: emt.paisseon.erika
+Version: 1.13.3
+Architecture: iphoneos-arm64
+Maintainer: Paisseon
+Installed-Size: 368
+Depends: mobilesubstrate, lilliana.async | firmware (>= 15.0)
+Filename: ./debs/emt.paisseon.erika_v1.13.3_iphoneos-arm64.deb
+Size: 92162
+MD5sum: bab331e4f39bc5a4f9e753d01b87a877
+SHA1: 3b544573d3c9d037f4b97685ab7f1293fd1a9d45
+SHA256: 66270edb31c79f000d5059266f0d5ca53dac2ef989f878b40707a5f3318e21c0
+Section: Tweaks (Piracy)
+Description: Piracy downloader for Sileo
+Author: Paisseon
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Erika.json&name=Erika&dev=Paisseon
+Icon: https://paisseon.github.io/icons/Erika.png
+Name: Erika
+Sileodepiction: https://paisseon.github.io/depictions/Erika.json
+
+Package: emt.paisseon.satella
+Version: 1.8.1
+Architecture: iphoneos-arm64
+Maintainer: Lilliana
+Installed-Size: 488
+Depends: mobilesubstrate, firmware (>= 12.2), preferenceloader, com.opa334.altlist
+Filename: ./debs/emt.paisseon.satella_v1.8.1_iphoneos-arm64.deb
+Size: 95982
+MD5sum: e951c9c54b7b646d3c58aa3d2d3946a5
+SHA1: b1a2a6e9c10ac9cfb62c31a6bfccff90e96111f7
+SHA256: cadbe4d4bf8e4e9317d450792e0cf1548c288b9016dee3241e72ee4bdeedd20d
+Section: Tweaks (Piracy)
+Description: Modern in-app purchase cracker
+Author: Lilliana
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Satella.json&name=Satella&dev=Lilliana
+Icon: https://paisseon.github.io/icons/Satella.png
+Name: Satella
+Sileodepiction: https://paisseon.github.io/depictions/Satella.json
+
+Package: emt.paisseon.xinamine
+Version: 0.0.5
+Architecture: iphoneos-arm64
+Maintainer: Sudo + Paisseon
+Installed-Size: 564
+Depends: ellekit, oldabi | cy+cpu.arm64, firmware (>= 15.0)
+Filename: ./debs/emt.paisseon.xinamine_v0.0.5_iphoneos-arm64.deb
+Size: 70006
+MD5sum: 7f8ed32b1fd837e82809b7f2b2600998
+SHA1: cca516b753396474b40a2d686795801a528a107a
+SHA256: 84c09be66731624a44a2f39b2acb8e90db6130cd14874bc1e127aafe7332c6c4
+Section: System
+Description: Add Xina tweak compatibility to Dopamine
+Author: Sudo + Paisseon
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Xinamine.json&name=Xinamine&dev=Paisseon
+Icon: https://paisseon.github.io/icons/Xinamine.png
+Name: Xinamine
+Sileodepiction: https://paisseon.github.io/depictions/Xinamine.json
+
+Package: lilliana.apphider
+Version: 0.0.2
+Architecture: iphoneos-arm64
+Maintainer: Paisseon
+Installed-Size: 596
+Depends: mobilesubstrate, firmware (>= 12.2), com.opa334.altlist
+Filename: ./debs/lilliana.apphider_v0.0.2_iphoneos-arm64.deb
+Size: 76876
+MD5sum: 87bb11c5013ba6353ed0c41dea3e2c40
+SHA1: b211ee1b47812d3f6257c00bd946af83652ce299
+SHA256: 2ea0cec64aa9864a6b6440a8dbfda58ef1487bed34c26d61499a4146ca72783e
+Section: Tweaks
+Description: Hide apps from your homescreen, library, spotlight
+Author: Paisseon
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/AppHider.json&name=AppHider&dev=Paisseon
+Icon: https://paisseon.github.io/icons/AppHider.png
+Name: App Hider
+Sileodepiction: https://paisseon.github.io/depictions/AppHider.json
+
 Package: lilliana.filzacrack
 Version: 0.0.6
 Architecture: iphoneos-arm64
@@ -103,6 +217,47 @@ Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paiss
 Icon: https://paisseon.github.io/icons/FilzaCrack.png
 Name: FilzaCrack
 Sileodepiction: https://paisseon.github.io/depictions/FilzaCrack.json
+
+Package: lilliana.reverie
+Version: 0.0.3
+Architecture: iphoneos-arm64
+Maintainer: Paisseon
+Installed-Size: 788
+Depends: mobilesubstrate, firmware (>= 13.0), preferenceloader, com.opa334.ccsupport
+Filename: ./debs/lilliana.reverie_v0.0.3_iphoneos-arm64.deb
+Size: 94754
+MD5sum: 98ec1dc0a72a6efc5c763ffeb3ea0824
+SHA1: 9447b23a68eed5a62487a1cd3d578ddb3af9ffa5
+SHA256: 4719d1228ed47c179b49c2452f0d71840c00dad6ae8865e6d4e25739e8cc5f86
+Section: Tweaks
+Description: Let your iPhone dream
+Author: Paisseon
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Reverie.json&name=Reverie&dev=Paisseon
+Icon: https://paisseon.github.io/icons/Reverie.png
+Name: Reverie
+Sileodepiction: https://paisseon.github.io/depictions/Reverie.json
+
+Package: me.jjolano.shadow
+Version: 3.7.6
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 1076
+Pre-Depends: dpkg
+Depends: firmware (>= 8.0), com.opa334.altlist, com.opa334.libsandy, me.jjolano.fmwk.hookkit, me.jjolano.hkmodule.substrate, me.jjolano.fmwk.rootbridge
+Recommends: mobilesubstrate, preferenceloader, me.jjolano.hkmodule.fishhook
+Suggests: com.ps.injectionfoundation
+Conflicts: me.jjolano.shadow.beta, me.jjolano.shadow.legacy
+Replaces: me.jjolano.shadow.beta
+Provides: me.jjolano.shadow.beta
+Filename: ./debs/me.jjolano.shadow_v3.7.6_iphoneos-arm64.deb
+Size: 100938
+MD5sum: d5d9e73e6fb80918eb95772361f123be
+SHA1: 22c6e9db9a75db1b4faff4292b7343d699e2de86
+SHA256: 52fdf82c814ab67700a51a13de0ca2138b5942b8b2e949493e04614aeef523d4
+Section: System
+Description: A modern jailbreak detection bypass.
+Author: jjolano
+Name: Shadow
 
 Package: modmenu
 Version: 1.1
@@ -139,6 +294,24 @@ Depiction: https://store.geometricsoftware.se/packages/se.geometric.intelligentp
 Icon: file:///Library/PreferenceBundles/IntelligentPass.bundle/store.png
 Name: IntelligentPass 5
 Sileodepiction: https://apt.geometricsoftware.se/package/se.geometric.intelligentpass5/depiction
+
+Package: xyz.cypwn.griddy
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: CyPwn
+Depends: mobilesubstrate
+Filename: ./debs/xyz.cypwn.griddy_v1.0.4_iphoneos-arm64.deb
+Size: 35888
+MD5sum: 7ff27b0bc8cc8ec4bc055b6624f7f884
+SHA1: 8fb7557557261a753572610517008ec3636a1545
+SHA256: f8e192e3865b89c1358f9007302c59b610fc5e16f6ce661a18add5a2dbd3da26
+Section: Tweaks
+Description: Make your icons hit the griddy. Move them anywhere!
+Author: mikifp
+Depiction: https://repo.cypwn.xyz/depiction/2854
+Icon: https://repo.cypwn.xyz/packages/Griddy-Rootless/icon.png
+Name: Griddy
+Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/2854
 
 Package: xyz.cypwn.instantcamera
 Version: 1.1.1
