@@ -1,3 +1,57 @@
+Package: com.amywhile.aemulotrial
+Version: 1.2.5
+Architecture: iphoneos-arm64
+Maintainer: Amy While <support@anamy.gay>
+Installed-Size: 1980
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0)
+Conflicts: com.amywhile.aemulo
+Filename: ./debs/com.amywhile.aemulotrial_v1.2.5_iphoneos-arm64.deb
+Size: 596292
+MD5sum: 6feb6d4b43ed6258c2de6b6a7f0ef0d7
+SHA1: a52c83d4f948bad629f13f0fea2cd532992bdfec
+SHA256: 614d1e0520650ab9df485a7b3306d8b900b7b33114e2fbbab305872458de41d8
+Section: Tweaks
+Description: NFC Frickery
+Author: Amy While <support@anamy.gay>
+Header: https://elihwyma.github.io/Aemulo/assets/Depiction-Header.png
+Icon: https://elihwyma.github.io/Aemulo/assets/Icon.png
+Name: Aemulo (Trial)
+Native-Depiction: https://elihwyma.github.io/Aemulo/NativeDepiction.json
+
+Package: com.foxfort.picarize
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: FoxfortMobile
+Installed-Size: 20624
+Depends: mobilesubstrate, firmware (>= 14.0), preferenceloader, com.foxfort.foxforttools (>= 1.4.13)
+Conflicts: com.x1a0.ena
+Filename: ./debs/com.foxfort.picarize_v1.0.7_iphoneos-arm.deb
+Size: 16377412
+MD5sum: be0bbe3a25044a43ed5a1500e6487a76
+SHA1: 3ccca57f3273056f533be80a254afa73496176e8
+SHA256: 01d93e37181bf258c13cd6d6f962a6ce84f3be5cba123ad860850320481dde34
+Section: Tweaks
+Description: Remove background from image
+Author: FoxfortMobile
+Icon: file:///Library/PreferenceBundles/picarizesettings.bundle/icon@3x.png
+Name: Picarize
+
+Package: com.gamegod.igg.rootless
+Version: 0.4.4
+Architecture: iphoneos-arm64
+Maintainer: iGameGod
+Installed-Size: 203320
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.gamegod.igg.rootless_v0.4.4_iphoneos-arm64.deb
+Size: 37322088
+MD5sum: 30926c79798d58b58fe99e60d383c404
+SHA1: ffb63727263b6903f0fe1d2f58ce09cfd3e5be61
+SHA256: bc39f3f2ea7a2b96b2b1269e8ae49b892596ed07b3b543e72782bc04be1a36d7
+Section: Utilities
+Description: Be the god of your games!
+Author: iGameGod
+Name: iGameGod Rootless
+
 Package: com.leftyfl1p.carbridge13
 Version: 2.0.13
 Architecture: iphoneos-arm64
@@ -50,6 +104,24 @@ Description: Ultimate iDevice Customization for iOS 14, 15 & 16
 Author: MTAC
 Name: Lynx 2
 
+Package: com.muirey03.libmryipc
+Version: 2.0.1
+Architecture: iphoneos-arm64
+Maintainer: Muirey03
+Installed-Size: 308
+Depends: mobilesubstrate
+Conflicts: ws.hbang.stopcrashingpls (=1.0)
+Filename: ./debs/com.muirey03.libmryipc_v2.0.1_iphoneos-arm64.deb
+Size: 18606
+MD5sum: e279f94d966892e4aef687d99afc81de
+SHA1: 279770b41cf64c9256a3260a28b749a90f65bccf
+SHA256: a535dfa8d9f66f8bdcfa556551465107deb64f15b41889ab2ab98dec6529279e
+Section: System
+Description: Easy-to-use, RocketBootstrap-less iOS IPC
+Tag: role::developer
+Author: Muirey03
+Name: libMRYIPC
+
 Package: com.opa334.crane
 Version: 1.3.16-2
 Architecture: iphoneos-arm64
@@ -82,6 +154,26 @@ Section: Tweaks
 Description: An awesome MobileSubstrate tweak!
 Author: Oxycodem
 Name: Mesh
+
+Package: com.pantsthief.flexing
+Version: 1.5.0+rootless
+Architecture: iphoneos-arm64
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 284
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debs/com.pantsthief.flexing_v1.5.0+rootless_iphoneos-arm64.deb
+Size: 18072
+MD5sum: 2ddd61c71ea654b14fbe2873889f386d
+SHA1: 566f60b469718433e4796c213713312d62303a68
+SHA256: 5944e4b11657199fec1c0080fa1413e94518cacb6fc50f2c2b6e0297f093ed39
+Section: Tweaks
+Description: Open FLEX anywhere!
+Author: Tanner Bennett <thepantsthief@me.com>
+Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
+Name: FLEXing
+Sileodepiction: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
 
 Package: com.pixelomer.oneko
 Version: 1.0.0
@@ -122,6 +214,54 @@ Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=lockscreen
 Dev: tomaszpoliszuk
 Name: MagSafe Enabler
 Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.uckermark.siriplus
+Version: 1.3
+Architecture: iphoneos-arm
+Maintainer: Uckermark
+Installed-Size: 1744
+Depends: dev.theos.orion (>= 1.0.0), com.opa334.ccsupport, mobilesubstrate, firmware (>= 13.0)
+Filename: ./debs/com.uckermark.siriplus_v1.3_iphoneos-arm.deb
+Size: 272356
+MD5sum: 5f5daaf68e578438b8d5f97075987735
+SHA1: 2a3ff1652a88b889a2a2c31311158c5e45b0c7e5
+SHA256: 26072268f655a70cde10f06210794b1de4ff0a0d44c77b4eba9f244b63f5fc8b
+Section: Tweaks
+Description: Replace Siri with ChatGPT/Gemini
+Author: Uckermark
+Name: SiriPlus
+
+Package: com.xerusdesign.junipero
+Version: 1.2
+Architecture: iphoneos-arm64
+Maintainer: XerusDesign <unixdesignios@gmail.com>
+Filename: ./debs/com.xerusdesign.junipero_v1.2_iphoneos-arm64.deb
+Size: 21613966
+MD5sum: 4f5d18342a4914fc797a7287daade88f
+SHA1: a3c0c1c5d8c4596a718c5414643f13d72c8999ae
+SHA256: 5f3d66e1e26d958b92b719ad19542c3ae83ec9fb2a73c6eb522b562a2295c056
+Section: Themes
+Homepage: https://twitter.com/xerusdesign
+Description: A stunning new look for iOS
+Author: XerusDesign <unixdesignios@gmail.com>
+Name: Junipero
+
+Package: com.yan.bloom
+Version: 1.1.8
+Architecture: iphoneos-arm64
+Maintainer: yan
+Installed-Size: 2720
+Depends: dev.theos.orion14, firmware (>= 14.0), com.ginsu.comet, com.yan.lottie
+Filename: ./debs/com.yan.bloom_v1.1.8_iphoneos-arm64.deb
+Size: 380702
+MD5sum: fe5006f11f719885e90f8324748d2596
+SHA1: de2553a07e8c1737bb310a514ab1c9e0e72de054
+SHA256: 7e77dddde375fa12a015c41e71cedc768c9b110b8ba8dff571291541adb92f12
+Section: Tweaks
+Description: Beautiful animated notifications.
+Author: yan
+Icon: https://yandevelop.github.io/assets/icons/bloom/icon.png
+Name: Bloom
 
 Package: emt.paisseon.erika
 Version: 1.13.3
@@ -180,6 +320,23 @@ Icon: https://paisseon.github.io/icons/Xinamine.png
 Name: Xinamine
 Sileodepiction: https://paisseon.github.io/depictions/Xinamine.json
 
+Package: jp.bakera1n.enablestagemanager
+Version: 0.0.6
+Architecture: iphoneos-arm64
+Maintainer: bakera1n developer
+Installed-Size: 288
+Depends: firmware (>= 16.0), mobilesubstrate, gsc.ipad
+Conflicts: cy+cpu.armv7, gsc.iphone
+Filename: ./debs/jp.bakera1n.enablestagemanager_v0.0.6_iphoneos-arm64.deb
+Size: 152656
+MD5sum: e9ea058a8d78a1c15744d7b847cd78ab
+SHA1: 353a09bab81b4a394b75248bdda1dca7ea6f1aa8
+SHA256: 0a617c47e7927c6148eb141c3a334de466b26653c059ad9835284f942d53d60d
+Section: Tweaks
+Description: Enable StageManager for iPad
+Author: bakera1n developer
+Name: EnableStageManager
+
 Package: lilliana.apphider
 Version: 0.0.2
 Architecture: iphoneos-arm64
@@ -218,6 +375,25 @@ Icon: https://paisseon.github.io/icons/FilzaCrack.png
 Name: FilzaCrack
 Sileodepiction: https://paisseon.github.io/depictions/FilzaCrack.json
 
+Package: lilliana.ishtar
+Version: 0.0.7
+Architecture: iphoneos-arm64
+Maintainer: Paisseon
+Installed-Size: 456
+Depends: mobilesubstrate, firmware (>= 12.2)
+Filename: ./debs/lilliana.ishtar_v0.0.7_iphoneos-arm64.deb
+Size: 73950
+MD5sum: 81f5a935ba912b93e3c271cb2109d9bd
+SHA1: 86b979e9d2537e790ea7b047690c33e530d4eaae
+SHA256: 7f5172b18b1dda641bad40c8fc9baa52d1f66cba848d193e55541dee42512056
+Section: Tweaks (Piracy)
+Description: iOSGods VIP cheats for free
+Author: Paisseon
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Ishtar.json&name=Ishtar&dev=Paisseon
+Icon: https://paisseon.github.io/icons/Ishtar.png
+Name: Ishtar
+Sileodepiction: https://paisseon.github.io/depictions/Ishtar.json
+
 Package: lilliana.reverie
 Version: 0.0.3
 Architecture: iphoneos-arm64
@@ -236,6 +412,143 @@ Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paiss
 Icon: https://paisseon.github.io/icons/Reverie.png
 Name: Reverie
 Sileodepiction: https://paisseon.github.io/depictions/Reverie.json
+
+Package: me.jjolano.fmwk.hookkit
+Version: 1.0.15
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 172
+Depends: firmware (>= 8.0), me.jjolano.fmwk.modulous, me.jjolano.fmwk.rootbridge
+Filename: ./debs/me.jjolano.fmwk.hookkit_v1.0.15_iphoneos-arm64.deb
+Size: 13206
+MD5sum: 54052a5f6e3856075da7c42b689b1123
+SHA1: ea5b17453e78b439ab82c150a9923ec0bb77650c
+SHA256: 710cff21b4b3849d79d3b021a61c5bf2c19ccc4697f329fa6039220a3e1a503c
+Section: Development
+Description: An iOS developer framework for unified hooking methods.
+Tag: role::developer
+Author: jjolano
+Name: HookKit Framework
+
+Package: me.jjolano.fmwk.modulous
+Version: 1.0.8
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 168
+Depends: firmware (>= 8.0)
+Filename: ./debs/me.jjolano.fmwk.modulous_v1.0.8_iphoneos-arm64.deb
+Size: 6284
+MD5sum: e6a1f9d08bcf469eadb964b5678d9f0b
+SHA1: 50c025c5156993fb343770b2f37f60e5c1dc5194
+SHA256: f868e5ef05d102b27d2f9065e5f817b71ce8a846dd9ec8270ab497d6587fce45
+Section: Development
+Description: An iOS developer framework for modular software.
+Tag: role::developer
+Author: jjolano
+Name: Modulous Framework
+
+Package: me.jjolano.fmwk.rootbridge
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 168
+Depends: firmware (>= 8.0)
+Filename: ./debs/me.jjolano.fmwk.rootbridge_v1.0.1_iphoneos-arm64.deb
+Size: 4098
+MD5sum: 1844c270a446ee65231bd27d8f2d2a3c
+SHA1: c9a497e4be9149348ceca9f36e433b950d236039
+SHA256: 52c44bf54e6ad32f3d27446cc83ca61c84aba51f34aa340eb11f49e376ebac48
+Section: Development
+Description: An iOS developer framework for rootless tweak development.
+Tag: role::developer
+Author: jjolano
+Name: RootBridge Framework
+
+Package: me.jjolano.hkmodule.dobby
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 216
+Pre-Depends: me.jjolano.fmwk.hookkit
+Depends: firmware (>= 14.0)
+Filename: ./debs/me.jjolano.hkmodule.dobby_v1.0.7_iphoneos-arm64.deb
+Size: 24316
+MD5sum: ba57186543ce0927a14eb9c7f9b67673
+SHA1: 4f05260d4ec3817f00b5386578f1826c77f349b6
+SHA256: 15362fecb64beb18ebb2b966eefacb6a31588e3c2f3030dfa2eb49e61ad830d4
+Section: HookKit (Modules)
+Description: This module provides Dobby library support for HookKit Framework.
+Author: jjolano
+Name: HookKit Module (Dobby)
+
+Package: me.jjolano.hkmodule.ellekit
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 168
+Pre-Depends: me.jjolano.fmwk.hookkit
+Depends: ellekit
+Provides: me.jjolano.hkmodule.substrate
+Filename: ./debs/me.jjolano.hkmodule.ellekit_v1.0.7_iphoneos-arm64.deb
+Size: 5190
+MD5sum: 50a99c50f4cac2072350254011424ca8
+SHA1: 906f4ec0f2927b0ce7247879be441bb419414f2f
+SHA256: 3c2c434b135509012adeed87759cb1eb8af8a5b113b870a3768b1897498a9ad4
+Section: HookKit (Modules)
+Description: This module provides the ElleKit API for HookKit Framework.
+Author: jjolano
+Name: HookKit Module (ElleKit)
+
+Package: me.jjolano.hkmodule.fishhook
+Version: 1.0.8
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 172
+Pre-Depends: me.jjolano.fmwk.hookkit
+Filename: ./debs/me.jjolano.hkmodule.fishhook_v1.0.8_iphoneos-arm64.deb
+Size: 6710
+MD5sum: a095cd95ccd9cbcb761f2b04f377c07b
+SHA1: d8c159eeef85a5486cc1dadcb6646f335260adfc
+SHA256: 0a19f83a87081e7b992481ceaf81ab194f61cc7863bf43f3887aaeb77cd5de4e
+Section: HookKit (Modules)
+Description: This module provides fishhook library support for HookKit Framework.
+Author: jjolano
+Name: HookKit Module (fishhook)
+
+Package: me.jjolano.hkmodule.libhooker
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 168
+Pre-Depends: me.jjolano.fmwk.hookkit
+Depends: org.coolstar.libhooker (>= 1.0.0)
+Provides: me.jjolano.hkmodule.substrate
+Filename: ./debs/me.jjolano.hkmodule.libhooker_v1.0.7_iphoneos-arm64.deb
+Size: 5256
+MD5sum: e015f417112a49ecce54721bd610b0e3
+SHA1: ff1ca22b92b6e7e0c8f1ae1d189443fdb350dc5c
+SHA256: 47deaae9794760bcaf9d02d888dd862cb52ee4fad7bfca8bcf728b7b8bf5f4fd
+Section: HookKit (Modules)
+Description: This module provides the libhooker API for HookKit Framework.
+Author: jjolano
+Name: HookKit Module (libhooker)
+
+Package: me.jjolano.hkmodule.substrate
+Version: 1.0.8
+Architecture: iphoneos-arm64
+Maintainer: jjolano
+Installed-Size: 168
+Pre-Depends: me.jjolano.fmwk.hookkit
+Depends: mobilesubstrate
+Filename: ./debs/me.jjolano.hkmodule.substrate_v1.0.8_iphoneos-arm64.deb
+Size: 4182
+MD5sum: 35bcad10fd2feb5e3513f8632a31ade9
+SHA1: f36694f3efb7ddb6406ace526a89b511a486bb56
+SHA256: 705fa473d42c526da573c71c5389ce19a4047a36ab96af639a21938ee974b00f
+Section: HookKit (Modules)
+Description: This module provides the Cydia Substrate API for HookKit Framework.
+Author: jjolano
+Name: HookKit Module (Cydia Substrate)
 
 Package: me.jjolano.shadow
 Version: 3.7.6
@@ -258,6 +571,22 @@ Section: System
 Description: A modern jailbreak detection bypass.
 Author: jjolano
 Name: Shadow
+
+Package: me.tomt000.stageduo
+Version: 1.1.1
+Architecture: iphoneos-arm64
+Maintainer: tomt000
+Installed-Size: 8316
+Depends: mobilesubstrate (>= 0.9.5000), com.opa334.altlist, preferenceloader
+Filename: ./debs/me.tomt000.stageduo_v1.1.1_iphoneos-arm64.deb
+Size: 4597854
+MD5sum: 96139068cb49b5092a1f4648839fcb22
+SHA1: 7cfad56578d2f9cd64694b07f2dd3116bd32dcaf
+SHA256: 69e9ecc5da69a453b68a71f95ff83a87ad5e9e45ba5df1f22d2b2b01350e1f7a
+Section: Tweaks
+Description: Stage Manager Reimagined for iPhone
+Author: tomt000
+Name: Dynamic Stage
 
 Package: modmenu
 Version: 1.1
@@ -294,6 +623,28 @@ Depiction: https://store.geometricsoftware.se/packages/se.geometric.intelligentp
 Icon: file:///Library/PreferenceBundles/IntelligentPass.bundle/store.png
 Name: IntelligentPass 5
 Sileodepiction: https://apt.geometricsoftware.se/package/se.geometric.intelligentpass5/depiction
+
+Package: ws.hbang.newterm3
+Version: 3.0~beta1
+Architecture: iphoneos-arm64
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 14899
+Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
+Conflicts: ws.hbang.newterm, ws.hbang.newterm2
+Replaces: ws.hbang.newterm, ws.hbang.newterm2
+Filename: ./debs/ws.hbang.newterm3_v3.0~beta1_iphoneos-arm64.deb
+Size: 3836904
+MD5sum: fed66db963cb17131b239dc6deb7058c
+SHA1: 4c9327fb9cd3ccdade8247bab90bcf12338b6be2
+SHA256: cbd965fbdc25634e4e447ba4609598a67a0f354a63fce2dbf9e0dce99042b055
+Section: Terminal Support
+Description: Powerful terminal app for iOS
+Tag: compatible_min::ios14.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/newterm-beta
+Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
+Name: NewTerm 3 Beta
+Support: https://hashbang.productions/support/
 
 Package: xyz.cypwn.griddy
 Version: 1.0.4
