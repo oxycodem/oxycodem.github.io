@@ -1,3 +1,50 @@
+Package: MisakaHelper
+Version: 2.1-0
+Architecture: iphoneos-arm64
+Essential: no
+Maintainer: Misaka
+Depends: mobilesubstrate
+Conflicts: MisakaHelper
+Replaces: MisakaHelper
+Provides: MisakaHelper
+Filename: ./debs/MisakaHelper_END无根@巨魔商店.deb
+Size: 13176824
+MD5sum: dfdac07dbb49f5871e1f8bff89180faa
+SHA1: 9e80412e9766c8e3dae868cd796d6f374c7057c2
+SHA256: 0185beb68e7c993be4228848a0181b9cf2b3e46b1fe673fc03fb6c0940c259c7
+Section: Tweaks
+Priority: optional
+Description: MisakaHelper
+Author: Misaka
+Name: MisakaHelper
+
+Package: TFLinks
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: TFLinks
+Filename: ./debs/TFLinks_1.0_iphoneos-arm64.deb
+Size: 6789516
+MD5sum: 6d61dc541b704d2c528e82cca93aa45e
+SHA1: a845fd39d5910f609b0f3795f7497011200dc8ae
+SHA256: 702c880ec4c8674570777db01ab73d95c30975d4d5a3457aaf680198f356b3b9
+Description: TFLinks app!
+
+Package: com.34306.mineland
+Version: 2.1-4+debug
+Architecture: iphoneos-arm64
+Maintainer: Little 34306
+Installed-Size: 360
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0)
+Filename: ./debs/mineland.deb
+Size: 49044
+MD5sum: 6420b16f39fa4cca156a89660faabcbc
+SHA1: b0f361827d080c0d1c63ab0ce97f7e2eb958745f
+SHA256: 2303cac380267bde83f38ea397ba3f3a128d31af7198b133476fc8fd7ec4a215
+Section: Tweaks
+Description: Lower your Dynamic Island and make it disappear if you don't need it. All the original code is from KhanhDuyTran (@TranKha50277352)
+Author: 34306, DuyKhanhTran
+Name: mineland
+
 Package: com.amywhile.aemulotrial
 Version: 1.2.5
 Architecture: iphoneos-arm64
@@ -17,6 +64,21 @@ Header: https://elihwyma.github.io/Aemulo/assets/Depiction-Header.png
 Icon: https://elihwyma.github.io/Aemulo/assets/Icon.png
 Name: Aemulo (Trial)
 Native-Depiction: https://elihwyma.github.io/Aemulo/NativeDepiction.json
+
+Package: com.b4db1r3.lstimeseconds16
+Version: 0.3
+Architecture: iphoneos-arm64
+Maintainer: b4db1r3
+Installed-Size: 432
+Filename: ./debs/com.b4db1r3.lstimeseconds16_v0.3_iphoneos-arm64.deb
+Size: 39076
+MD5sum: 0ea0621ae67d61311bfaf8604a6fdf55
+SHA1: 52ec1af9ed0c31e3f202c5b8d64f889c27a049f7
+SHA256: 68373a9be41a86b74f1360c4a25c9ff3065f654894461e44e93b7b6f2b4a4be9
+Section: Tweaks
+Description: Adds seconds to lockscreen time.
+Author: b4db1r3
+Name: LSTimeSeconds (iOS 15 - 16)
 
 Package: com.foxfort.picarize
 Version: 1.0.7
@@ -51,6 +113,21 @@ Section: Utilities
 Description: Be the god of your games!
 Author: iGameGod
 Name: iGameGod Rootless
+
+Package: com.iosrxwy.Telegrammask
+Version: 0.1-3
+Architecture: iphoneos-arm64
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: ./debs/com.iosrxwy.Telegrammask_0.1-3_iphoneos-arm64_rootless.deb
+Size: 678858
+MD5sum: 733135635c462455f9da45d503a93b7c
+SHA1: 49e4560e45051efe2dfb700e79fa5dc62380cad4
+SHA256: 3c12ea615f1a029a6450e541c4b9bf663878c8599ba49324170e631a19c0a6b6
+Section: System
+Priority: optional
+Description: TG伪装计算器插件，密码为当前时间，如13:14密码为1314，00：56密码为56，24小时制为准。三指双击可自定义密码。
+Author: iosrxwy
+Name: Telegrammask
 
 Package: com.leftyfl1p.carbridge13
 Version: 2.0.13
@@ -121,6 +198,22 @@ Description: Easy-to-use, RocketBootstrap-less iOS IPC
 Tag: role::developer
 Author: Muirey03
 Name: libMRYIPC
+
+Package: com.netskao.appdata
+Version: 1.4.2
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 3772
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: ./debs/Appdata_1.4.2.deb
+Size: 823820
+MD5sum: 090451a77622a645950b9eb617ff0075
+SHA1: 080c3f5babb93c1d27ed2a608f3867862a3d6eab
+SHA256: 1b64374f4ab692101d3c1ab6563b73622c569908b29475f17e6b1b17e6f62f33
+Section: Netskao-Tweaks
+Description: 桌面图标上滑或下滑或3D长按菜单选择即可唤出图标应用数据快捷工具，此版本由站长完整汉化并修改优化。修改优化:增加简单版降级应用，增加可选向下滑动唤出，增加查看应用加密状态，增加面板可选去除面板分割线，增加长按面板图标以安全模式启动，修改原版卸载应用为真实卸载不保留数据，修改原版清除缓存后未同步刷新总数据显示问题，修复原版更多信息页面长按复制的信息错误问题，修改原版重置数据为包括重置程序组内文件夹数据，修改原版重置数据栏数据大小显示为包括程序组内文件夹数据，修改原版重置数据后未同步刷新缓存数据显示和权限个数显示问题，修改原版在非AppStore中下载的应用唤出时无法使用重置数据/重置权限/卸载应用(修改后仅在系统应用上禁止)
+Author: Fouad Raheb
+Name: AppData
 
 Package: com.opa334.crane
 Version: 1.3.16-2
@@ -262,6 +355,21 @@ Description: Beautiful animated notifications.
 Author: yan
 Icon: https://yandevelop.github.io/assets/icons/bloom/icon.png
 Name: Bloom
+
+Package: com.yourepo.b4db1r3r3p0.lyrication
+Version: 2.5.0
+Architecture: iphoneos-arm64
+Maintainer: Marcel Braun <nfive060@gmail.com>
+Depends: mobilesubstrate, com.opa334.ccsupport, ws.hbang.common (>= 1.11)
+Filename: ./debs/com.yourepo.b4db1r3r3p0.lyrication_v2.5.0_iphoneos-arm64.deb
+Size: 154500
+MD5sum: df0e65a0e986ab0ff68534217b42e77f
+SHA1: 1d69fd77fca2f56ce55eb782d7e4e96ce3815bd7
+SHA256: c9d8f802ef19127efe1de8c6ed53f2345b9a4ee35fceaeb00b7d4356de1571e9
+Section: Tweaks
+Description: Live Lyrics for music
+Author: Marcel Braun <nfive060@gmail.com>
+Name: Lyrication
 
 Package: emt.paisseon.erika
 Version: 1.13.3
@@ -604,6 +712,22 @@ Description: Critical Strike CS: Online FPS Mod Menu by Atri112!
 Author: Atri112
 Name: Critical Strike CS: Online FPS Mod Menu
 
+Package: ru.shad0wdev.tgsettings
+Version: 0.0.4
+Architecture: iphoneos-arm64
+Maintainer: shad0wdev
+Installed-Size: 72
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/ru.shad0wdev.tgsettings_0.0.4_iphoneos-arm64.deb
+Size: 4860
+MD5sum: c6300bce838e6e1f94e848fc8954e02a
+SHA1: 97c69d7e2cb777842e5cb347e846c253e9ead70b
+SHA256: 05c02d4a417b6e20586c1859f0802921dce4668a8a17ea7f92fe8ca5d5974771
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: shad0wdev
+Name: TGSettings
+
 Package: se.geometric.intelligentpass5
 Version: 1.0.2
 Architecture: iphoneos-arm64
@@ -681,4 +805,22 @@ Depiction: https://repo.cypwn.xyz/depiction/1490
 Icon: https://media.havoc.app/64a18e1be9bc2a657c8b1d6f
 Name: InstantCamera
 Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/1490
+
+Package: xyz.cypwn.sushi
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: CyPwn
+Depends: mobilesubstrate, firmware (>= 13.0)
+Filename: ./debs/xyz.cypwn.sushi_v1.0.1_iphoneos-arm64.deb
+Size: 184262
+MD5sum: af5123aefdd79b7cd1bdf8ac3f0f2524
+SHA1: 95e86824451aa82d6d8a8014308350b7a5aa8333
+SHA256: 0440d900861de694117fe3b28224603a70a9feb293dea4c74def3c1923bd99f1
+Section: Tweaks
+Description: Now playing banner with integrated media controls!
+Author: Skitty
+Depiction: https://repo.cypwn.xyz/depiction/2099
+Icon: https://skitty.xyz/repo/icons/xyz.skitty.sushi.png
+Name: Sushi
+Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/2099
 
