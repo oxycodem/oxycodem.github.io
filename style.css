@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    width: 100%;
+}
+
+#lessons-nav {
+    width: 90%;
+    max-width: 900px;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lessons-nav h2 {
+    color: #666;
+    text-align: center;
+}
+
+#lesson-spis {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#lesson-spis li {
+    margin-bottom: 0;
+}
+
+#lesson-spis li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    text-decoration: none;
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(173, 138, 255, 0.37);
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#lesson-spis li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lesson-spis li a:hover::before {
+    opacity: 1;
+}
+
+#lesson-spis li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px 0 rgba(240, 240, 240, 0.5);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-8px);
+}
+
+#lesson-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lesson-content.active {
+    display: flex;
+}
+
+#back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#back-button:hover {
+    color: #fff;
+}
+
+.lesson-content-wrapper {
+    width: 80%;
+    max-width: 800px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(102,102,102,0.5);
+    margin-top: 50px;
+}
+
+.task-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 5px rgba(102,102,102,0.3);
+}
+
+.task-item h3 {
+    color: #666;
+    margin-top: 0;
+}
+
+.task-item p {
+    color: #e0e0e0;
+}
+
+.task-item pre {
+    background-color: #0a0a0a;
+    color: #666;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #666;
+}
+
+.code-toggle {
+    background-color: #666;
+    color: #0a0a0a;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.code-toggle:hover {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(102,102,102,0.7);
+}
+
+.code-content {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px dashed #666;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(102,102,102,0.3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.code-content.active {
+    max-height: 500px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    color: #666;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #666;
+    display: block;
+}

@@ -1,0 +1,7 @@
+{
+    "title": "Arcade",
+    "lessons": [
+        "lessons/Placeholder_Arcade_Lesson.json"
+    ],
+    "description": "Уроки по созданию игр с Arcade."
+}

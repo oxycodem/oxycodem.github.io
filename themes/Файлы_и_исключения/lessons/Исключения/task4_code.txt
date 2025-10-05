@@ -1,0 +1,11 @@
+class BrokenRuleError(ValueError):
+    pass
+
+
+def check(s):
+    a = s.lower()
+    for i in range(len(a) - 1):
+        if a[i] in ['ж', 'ч', 'ш', 'щ'] and a[i + 1] in ['ю', 'ы', 'я']:
+            raise BrokenRuleError("The rule is broken.")
+
+    return "That's right."

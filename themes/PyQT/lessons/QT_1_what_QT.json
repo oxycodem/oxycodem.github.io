@@ -1,0 +1,60 @@
+{
+    "title": "QT 1. Что такое QT и PyQT. Знакомство",
+    "tasks": [
+        {
+            "title": "Задача 1: Фокус со словами",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task1_code.txt"
+        },
+        {
+            "title": "Задача 2: Вычисление выражений",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task2_code.txt"
+        },
+        {
+            "title": "Задача 3: Миникалькулятор",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task3_code.txt"
+        },
+        {
+            "title": "Задача 4: Прятки для виджетов",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task4_code.txt"
+        },
+        {
+            "title": "Задача 5: Арифмометр",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task5_code.txt"
+        },
+        {
+            "title": "Задача 6: Азбука Морзе 2",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task6_code.txt"
+        },
+        {
+            "title": "Задача 7: Крестики нолики QT edition",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task7_code.txt"
+        },
+        {
+            "title": "Задача 8: Заказ в Макдональдсе",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task8_code.txt"
+        },
+        {
+            "title": "Задача 9: Калькулятор",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task9_code.txt"
+        },
+        {
+            "title": "Задача 10: Ним наносит ответный удар",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task10_code.txt"
+        },
+        {
+            "title": "Задача 11: Заказ в Макдональдсе - 2",
+            "solver": "lovpqq",
+            "codePath": "themes/PyQT/lessons/QT_1_what_QT/task11_code.txt"
+        }
+    ]
+}

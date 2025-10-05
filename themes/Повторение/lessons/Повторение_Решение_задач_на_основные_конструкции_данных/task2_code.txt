@@ -1,0 +1,26 @@
+a = int(input())
+
+ch1 = 0
+ch2 = 0
+ch3 = 0
+ch4 = 0
+
+for i in range(a):
+    a = input().split()
+    if int(a[0]) == 0 or int(a[1]) == 0:
+        print(f'({a[0]}, {a[1]})')
+        continue
+
+    if int(a[0]) > 0 and int(a[1]) > 0:
+        ch1 += 1
+
+    if int(a[0]) < 0 and int(a[1]) < 0:
+        ch3 += 1
+
+    if int(a[0]) > 0 and int(a[1]) < 0:
+        ch4 += 1
+
+    if int(a[0]) < 0 and int(a[1]) > 0:
+        ch2 += 1
+
+print(f'I: {ch1}, II: {ch2}, III: {ch3}, IV: {ch4}.')

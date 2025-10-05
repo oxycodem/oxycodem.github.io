@@ -1,0 +1,19 @@
+rules = {
+    "бумага": ["камень", 'пират'],
+    "камень": ["ром", "ножницы"],
+    "ром": ["пират", "бумага"],
+    "пират": ["ножницы", "камень"],
+    "ножницы": ["бумага", "ром"]
+}
+
+choice1 = input().strip()
+choice2 = input().strip()
+
+if choice1 == choice2:
+    result = "ничья"
+elif choice2 in rules[choice1]:
+    result = "первый"
+else:
+    result = "второй"
+
+print(result)

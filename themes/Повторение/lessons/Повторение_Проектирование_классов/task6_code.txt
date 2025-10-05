@@ -1,0 +1,62 @@
+class Point:
+    def __init__(self, n, x, y):
+        self.n = n
+        self.x = x
+        self.y = y
+
+    def get_x(self):
+        return self.x
+
+    def get_y(self):
+        return self.y
+
+    def __str__(self):
+        return f"{self.n}({self.x}, {self.y})"
+
+    def __repr__(self):
+        return f"Point('{self.n}', {self.x}, {self.y})"
+
+    def __eq__(self, o):
+        if not isinstance(o, Point):
+            return NotImplemented
+        return self.x == o.x and self.y == o.y
+
+    def __ne__(self, o):
+        eq = self.__eq__(o)
+        if eq is NotImplemented:
+            return NotImplemented
+        return not eq
+
+
+class CheckMark:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def __str__(self):
+        return f"{self.a.n}{self.b.n}{self.c.n}"
+
+    def __repr__(self):
+        return f"CheckMark({repr(self.a)},{repr(self.b)},{repr(self.c)})"
+
+    def __bool__(self):
+        x1, y1 = self.a.x, self.a.y
+        x2, y2 = self.b.x, self.b.y
+        x3, y3 = self.c.x, self.c.y
+        return (x2 - x1) * (y3 - y1) != (y2 - y1) * (x3 - x1)
+
+    def __eq__(self, o):
+        if not isinstance(o, CheckMark):
+            return NotImplemented
+        if self.b != o.b:
+            return False
+        e1 = {(self.a.x, self.a.y), (self.c.x, self.c.y)}
+        e2 = {(o.a.x, o.a.y), (o.c.x, o.c.y)}
+        return e1 == e2
+
+    def __ne__(self, o):
+        eq = self.__eq__(o)
+        if eq is NotImplemented:
+            return NotImplemented
+        return not eq

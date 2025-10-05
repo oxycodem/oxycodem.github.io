@@ -1,0 +1,32 @@
+from sys import stdin
+
+
+first_word = stdin.readline().strip()
+
+first_word1 = first_word
+
+f = 0
+
+result = []
+
+for line in stdin:
+    line = line.strip()
+
+    for i in range(len(line)):
+        for j in range(len(first_word1)):
+            if line[i] not in first_word1:
+                f = 1
+                break
+
+            if line[i] == first_word1[j]:
+                first_word1 = first_word1.replace(line[i], '', 1)
+                if i == len(line) - 1 and f == 0:
+                    result.append(line)
+                break
+    f = 0
+
+    first_word1 = first_word
+
+print(len(result))
+for i in result:
+    print(i)

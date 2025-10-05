@@ -1,0 +1,70 @@
+{
+    "title": "Текстовые файлы: txt и csv",
+    "tasks": [
+        {
+            "title": "Задача 1: Высшая математика",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task1_code.txt"
+        },
+        {
+            "title": "Задача 2: Вышел. Погулял",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task2_code.txt"
+        },
+        {
+            "title": "Задача 3: Бинарная копия (ну почти)",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task3_code.txt"
+        },
+        {
+            "title": "Задача 4: Расписание поезда",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task4_code.txt"
+        },
+        {
+            "title": "Задача 5: Ямы на дороге",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task5_code.txt"
+        },
+        {
+            "title": "Задача 6: TODO",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task6_code.txt"
+        },
+        {
+            "title": "Задача 7: Бабочки",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task7_code.txt"
+        },
+        {
+            "title": "Задача 8: Пляж для купания",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task8_code.txt"
+        },
+        {
+            "title": "Задача 9: Простые делители",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task9_code.txt"
+        },
+        {
+            "title": "Задача 10: Черная папка",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task10_code.txt"
+        },
+        {
+            "title": "Задача 11: Номер строки",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task11_code.txt"
+        },
+        {
+            "title": "Задача 12: Прогнозирование молний",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task12_code.txt"
+        },
+        {
+            "title": "Задача 13: Идеальный шторм",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Текстовые_файлы_txt_и_csv/task13_code.txt"
+        }
+    ]
+}

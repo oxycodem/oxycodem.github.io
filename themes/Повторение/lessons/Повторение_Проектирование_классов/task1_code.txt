@@ -1,0 +1,77 @@
+N = 7
+PITCHES = ["до", "ре", "ми", "фа", "соль", "ля", "си"]
+LONG_PITCHES = ["до-о", "ре-э", "ми-и", "фа-а", "со-оль", "ля-а", "си-и"]
+INTERVALS = ["прима", "секунда", "терция", "кварта", "квинта", "секста", "септима"]
+
+
+class Note:
+    def __init__(self, note, long=False, fleg_restert=False):
+        if fleg_restert:
+            if long:
+                self.index = LONG_PITCHES.index(note)
+                self.note = LONG_PITCHES[self.index]
+            else:
+                self.index = PITCHES.index(note)
+                self.note = note
+        else:
+            if long:
+                self.index = PITCHES.index(note)
+                self.note = LONG_PITCHES[self.index]
+            else:
+                self.index = PITCHES.index(note)
+                self.note = note
+
+    def __str__(self):
+        return self.note
+
+    # ==
+    def __eq__(self, other):
+        return self.index == other.index
+
+    # !=
+    def __ne__(self, other):
+        return self.index != other.index
+
+    # <
+    def __lt__(self, other):
+        return self.index < other.index
+
+    # <=
+    def __le__(self, other):
+        return self.index <= other.index
+
+    # >
+    def __gt__(self, other):
+        return self.index > other.index
+
+    # >=
+    def __ge__(self, other):
+        return self.index >= other.index
+
+    # >>
+    def __rshift__(self, other):
+        if self.note in PITCHES:
+            index = (self.index + other) % N
+            return Note(PITCHES[index], False, True)
+        elif self.note in LONG_PITCHES:
+            index = (self.index + other) % N
+            return Note(LONG_PITCHES[index], True, True)
+
+    # <<
+    def __lshift__(self, other):
+        if self.note in PITCHES:
+            index = (self.index - other) % N
+            if index < 0:
+                index = index * (-1)
+            return Note(PITCHES[index], False, True)
+        elif self.note in LONG_PITCHES:
+            index = (self.index - other) % N
+            if index < 0:
+                index = index * (-1)
+            return Note(LONG_PITCHES[index], True, True)
+
+    def get_interval(self, other):
+        if self.index > other.index:
+            return INTERVALS[self.index - other.index]
+        else:
+            return INTERVALS[other.index - self.index]

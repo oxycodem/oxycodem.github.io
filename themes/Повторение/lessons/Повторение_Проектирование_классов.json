@@ -1,0 +1,42 @@
+{
+    "title": "Проектирование классов",
+    "tasks": [
+        {
+            "title": "Задача 1: Интервалы и транспортирование",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task1_code.txt"
+        },        {
+            "title": "Задача 2: Подбор мелодии",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task2_code.txt"
+        },        {
+            "title": "Задача 3: Кинотеатры (руч)",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task3_code.txt"
+        },        {
+            "title": "Задача 4: С занесением в список",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task4_code.txt"
+        },        {
+            "title": "Задача 5: Равенство и порядок",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task5_code.txt"
+        },        {
+            "title": "Задача 6: Для галочки",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task6_code.txt"
+        },        {
+            "title": "Задача 7: С занесением во множества и словари",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task7_code.txt"
+        },        {
+            "title": "Задача 8: Колокольни с ограничениями",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task8_code.txt"
+        },        {
+            "title": "Задача 9: Кинотеатры с отчётами и рекламой (руч)",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Проектирование_классов/task9_code.txt"
+        }
+    ]
+}

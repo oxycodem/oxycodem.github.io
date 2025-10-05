@@ -1,0 +1,22 @@
+d = {}
+
+while True:
+    try:
+        line = input()
+        assert line
+        k, v = line.split('\t')
+        d[k] = v
+    except (EOFError, ValueError, AssertionError):
+        break
+
+
+while True:
+    try:
+        line = input()
+        assert line
+        try:
+            print(d[line])
+        except KeyError:
+            print('Делай, что должен, и будь, что будет.')
+    except (EOFError, AssertionError):
+        break

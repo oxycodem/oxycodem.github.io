@@ -1,0 +1,28 @@
+class LittleBell:
+    def sound(self):
+        print("ding")
+
+
+class BigBell:
+    def __init__(self):
+        self._next_is_ding = True
+
+    def sound(self):
+        if self._next_is_ding:
+            print("ding")
+        else:
+            print("dong")
+        self._next_is_ding = not self._next_is_ding
+
+
+class BellTower:
+    def __init__(self, *bells):
+        self.bells = list(bells)
+
+    def append(self, bell):
+        self.bells.append(bell)
+
+    def sound(self):
+        for bell in self.bells:
+            bell.sound()
+        print("...")

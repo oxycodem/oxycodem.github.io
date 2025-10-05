@@ -1,0 +1,12 @@
+data = input().split(' -> ')
+n = int(input())
+for i in range(n):
+    a = input()
+    if a == data[-1]:
+        print(f'{data[-2]} -> {data[-1]}')
+        continue
+    elif a == data[0]:
+        print(f'{data[0]} -> {data[1]}')
+        continue
+    num = data.index(a)
+    print(f'{data[num - 1]} -> {data[num]} -> {data[num + 1]}')

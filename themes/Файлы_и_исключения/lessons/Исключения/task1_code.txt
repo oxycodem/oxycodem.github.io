@@ -1,0 +1,11 @@
+n = input()
+try:
+    num = int(n)
+    digits = list(map(int, n))
+    product = 1
+    for d in digits:
+        product *= d
+    result = num / product
+except ZeroDivisionError:
+    result = 0
+print(result)

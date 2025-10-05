@@ -1,0 +1,54 @@
+class Bell:
+    def __init__(self, *args, **kwargs):
+        self.args = list(args)
+        self.kwargs = dict(kwargs)
+
+    def print_info(self):
+        spase = []
+        if self.kwargs:
+            for key, value in sorted(self.kwargs.items()):
+                spase.append(f'{key}: {value}')
+        if self.kwargs and self.args:
+            spase.append(';')
+        if self.args:
+            for arg in sorted(self.args):
+                spase.append(arg)
+        if not spase:
+            print('-')
+        else:
+            print(', '.join(spase).replace(', ;,', ';'))
+
+
+class LittleBell(Bell):
+    def _init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def sound(self):
+        print("ding")
+
+
+class BigBell(Bell):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self._next_is_ding = True
+
+    def sound(self):
+        if self._next_is_ding:
+            print("ding")
+        else:
+            print("dong")
+        self._next_is_ding = not self._next_is_ding
+
+
+class BellTower:
+    def __init__(self, *bells):
+        self.bells = list(bells)
+
+    def append(self, bell):
+        self.bells.append(bell)
+
+    def sound(self):
+        for bell in self.bells:
+            bell.sound()
+        print("...")

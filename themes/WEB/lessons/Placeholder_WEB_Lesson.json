@@ -1,0 +1,10 @@
+{
+    "title": "Placeholder Командная строка Lesson",
+    "tasks": [
+        {
+            "title": "Задача 1",
+            "code": "console.log('Ваш код здесь');",
+            "solver": "lovpqq"
+        }
+    ]
+}

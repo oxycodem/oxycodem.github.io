@@ -1,0 +1,80 @@
+{
+    "title": "Исключения",
+    "tasks": [
+        {
+            "title": "Задача 1: Нулевое исключение",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task1_code.txt"
+        },
+        {
+            "title": "Задача 2: На все случаи жизни",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task2_code.txt"
+        },
+        {
+            "title": "Задача 3: Пятый элемент",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task3_code.txt"
+        },
+        {
+            "title": "Задача 4: Жи-ши пиши",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task4_code.txt"
+        },
+        {
+            "title": "Задача 5: Не треугольник",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task5_code.txt"
+        },
+        {
+            "title": "Задача 6: Число из числа",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task6_code.txt"
+        },
+        {
+            "title": "Задача 7: Системный перевод",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task7_code.txt"
+        },
+        {
+            "title": "Задача 8: Буква из алфавита",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task8_code.txt"
+        },
+        {
+            "title": "Задача 9: Маловато будет",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task9_code.txt"
+        },
+        {
+            "title": "Задача 10: Высота над горизонтом",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task10_code.txt"
+        },
+        {
+            "title": "Задача 11: Не чирикайте",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task11_code.txt"
+        },
+        {
+            "title": "Задача 12: Не превышай!",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task12_code.txt"
+        },
+        {
+            "title": "Задача 13: Файл есть или нет?",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task13_code.txt"
+        },
+        {
+            "title": "Задача 14: Посторонним В",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task14_code.txt"
+        },
+        {
+            "title": "Задача 15: Пицца и ананасы",
+            "solver": "lovpqq",
+            "codePath": "themes/Файлы_и_исключения/lessons/Исключения/task15_code.txt"
+        }
+    ]
+}

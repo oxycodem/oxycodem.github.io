@@ -1,0 +1,19 @@
+class Note:
+    def __init__(self, note):
+        self.note = note
+
+    def play(self):
+        if self.note == 'до':
+            print('до')
+        elif self.note == 'ре':
+            print('ре')
+        elif self.note == 'ми':
+            print('ми')
+        elif self.note == 'фа':
+            print('фа')
+        elif self.note == 'соль':
+            print('соль')
+        elif self.note == 'ля':
+            print('ля')
+        elif self.note == 'си':
+            print('си')

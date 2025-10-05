@@ -1,0 +1,118 @@
+PITCHES = ["до", "ре", "ми", "фа", "соль", "ля", "си"]
+
+
+class Note:
+    def __init__(self, note, is_long=False):
+        self.note = note
+        self.is_long = is_long
+
+    def __str__(self):
+        if self.is_long is True:
+            if self.note == 'до':
+                return 'до-о'
+            elif self.note == 'ре':
+                return 'ре-э'
+            elif self.note == 'ми':
+                return 'ми-и'
+            elif self.note == 'фа':
+                return 'фа-а'
+            elif self.note == 'соль':
+                return 'со-оль'
+            elif self.note == 'ля':
+                return 'ля-а'
+            elif self.note == 'си':
+                return 'си-и'
+        elif self.is_long is False:
+            return self.note
+
+    def play(self):
+        if self.note == 'до':
+            print('до')
+        elif self.note == 'ре':
+            print('ре')
+        elif self.note == 'ми':
+            print('ми')
+        elif self.note == 'фа':
+            print('фа')
+        elif self.note == 'соль':
+            print('соль')
+        elif self.note == 'ля':
+            print('ля')
+        elif self.note == 'си':
+            print('си')
+
+
+class LoudNote(Note):
+    def __init__(self, note, is_long=False):
+        self.note = note
+        self.is_long = is_long
+
+    def __str__(self):
+        if self.is_long is True:
+            if self.note == 'до':
+                return 'до-о'.upper()
+            elif self.note == 'ре':
+                return 'ре-э'.upper()
+            elif self.note == 'ми':
+                return 'ми-и'.upper()
+            elif self.note == 'фа':
+                return 'фа-а'.upper()
+            elif self.note == 'соль':
+                return 'со-оль'.upper()
+            elif self.note == 'ля':
+                return 'ля-а'.upper()
+            elif self.note == 'си':
+                return 'си-и'.upper()
+        elif self.is_long is False:
+            return self.note.upper()
+
+    def __repr__(self):
+        if self.is_long is True:
+            if self.note == 'до':
+                return 'до-о'.upper()
+            elif self.note == 'ре':
+                return 'ре-э'.upper()
+            elif self.note == 'ми':
+                return 'ми-и'.upper()
+            elif self.note == 'фа':
+                return 'фа-а'.upper()
+            elif self.note == 'соль':
+                return 'со-оль'.upper()
+            elif self.note == 'ля':
+                return 'ля-а'.upper()
+            elif self.note == 'си':
+                return 'си-и'.upper()
+        elif self.is_long is False:
+            return self.note.upper()
+
+
+class DefaultNote(Note):
+    def __init__(self, note='до', is_long=False):
+        self.note = note
+        self.is_long = is_long
+
+
+class NoteWithOctave(Note):
+    def __init__(self, note, octave, is_long=False):
+        self.note = note
+        self.octave = octave
+        self.is_long = is_long
+
+    def __str__(self):
+        if self.is_long is True:
+            if self.note == 'до':
+                return f'до-о ({self.octave})'
+            elif self.note == 'ре':
+                return f'ре-э ({self.octave})'
+            elif self.note == 'ми':
+                return f'ми-и ({self.octave})'
+            elif self.note == 'фа':
+                return f'фа-а ({self.octave})'
+            elif self.note == 'соль':
+                return f'со-оль ({self.octave})'
+            elif self.note == 'ля':
+                return f'ля-а ({self.octave})'
+            elif self.note == 'си':
+                return f'си-и ({self.octave})'
+        elif self.is_long is False:
+            return f'{self.note} ({self.octave})'

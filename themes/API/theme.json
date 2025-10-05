@@ -1,0 +1,7 @@
+{
+    "title": "API",
+    "description": "Изучим протокол HTTP, узнаем, что такое API, научимся использовать Яндекс.Карты в собственных приложениях.",
+    "lessons": [
+        "lessons/Placeholder_API_Lesson.json"
+    ]
+}

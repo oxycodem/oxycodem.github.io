@@ -1,0 +1,7 @@
+{
+    "title": "WEB",
+    "description": "Научимся писать свои web приложения и телеграм боты. Потом можно будет написать свою социальную сеть.",
+    "lessons": [
+        "lessons/Placeholder_WEB_Lesson.json"
+    ]
+}

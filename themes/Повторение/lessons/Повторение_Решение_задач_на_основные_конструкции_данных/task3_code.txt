@@ -1,0 +1,13 @@
+alphabet = input().strip()
+shift = int(input().strip())
+n = len(alphabet)
+normalized_shift = shift % n
+encryption_alphabet = alphabet[normalized_shift:] + alphabet[:normalized_shift]
+original_alphabet = alphabet
+if normalized_shift == 0:
+    decryption_alphabet = alphabet
+else:
+    decryption_alphabet = alphabet[-normalized_shift:] + alphabet[:-normalized_shift]
+print(encryption_alphabet)
+print(original_alphabet)
+print(decryption_alphabet)

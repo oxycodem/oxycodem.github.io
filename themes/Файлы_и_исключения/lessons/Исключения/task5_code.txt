@@ -1,0 +1,32 @@
+class NotEnoughError(Exception):
+    pass
+
+
+class DoNotMatchError(Exception):
+    pass
+
+
+def istriangle(*a):
+    if len(a) < 3:
+        raise NotEnoughError("Not enough arguments.")
+
+    else:
+        for i in a:
+            if len(i) != 2:
+                raise DoNotMatchError("The number of coordinates does not match.")
+
+        else:
+            _1 = a[0]
+            _2 = a[1]
+            _3 = a[2]
+
+            if _1[1] == 0 and _2[1] == 0 and _3[1] == 0:
+                return False
+            else:
+                try:
+                    if abs(_3[1] - _1[1]) / abs(_3[0] - _1[0]) == abs(_3[1] - _2[1]) / abs(_3[0] - _2[0]):
+                        return False
+                except ZeroDivisionError:
+                    return True
+
+        return True

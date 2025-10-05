@@ -1,0 +1,29 @@
+from PIL import Image, ImageChops
+
+
+def auto_crop_background():
+    image = Image.open("image.png")
+    width, height = image.size
+
+    corners = [
+        (0, 0),
+        (width - 1, 0),
+        (0, height - 1),
+        (width - 1, height - 1)
+    ]
+
+    corner_colors = [image.getpixel(corner) for corner in corners]
+    bg_color = max(set(corner_colors), key=corner_colors.count)
+    bg_image = Image.new(image.mode, image.size, bg_color)
+    diff = ImageChops.difference(image, bg_image)
+    bbox = diff.getbbox()
+
+    if bbox:
+        cropped = image.crop(bbox)
+        cropped.save("res.png")
+    else:
+        image.save("res.png")
+
+
+if __name__ == "__main__":
+    auto_crop_background()

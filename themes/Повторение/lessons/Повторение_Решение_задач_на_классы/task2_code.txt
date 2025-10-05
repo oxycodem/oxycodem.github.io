@@ -1,0 +1,39 @@
+class Note:
+    def __init__(self, note, boo=False):
+        self.note = note
+        self.boo = boo
+
+    def __str__(self):
+        if self.boo is True:
+            if self.note == 'до':
+                return 'до-о'
+            elif self.note == 'ре':
+                return 'ре-э'
+            elif self.note == 'ми':
+                return 'ми-и'
+            elif self.note == 'фа':
+                return 'фа-а'
+            elif self.note == 'соль':
+                return 'со-оль'
+            elif self.note == 'ля':
+                return 'ля-а'
+            elif self.note == 'си':
+                return 'си-и'
+        elif self.boo is False:
+            return self.note
+
+    def play(self):
+        if self.note == 'до':
+            print('до')
+        elif self.note == 'ре':
+            print('ре')
+        elif self.note == 'ми':
+            print('ми')
+        elif self.note == 'фа':
+            print('фа')
+        elif self.note == 'соль':
+            print('соль')
+        elif self.note == 'ля':
+            print('ля')
+        elif self.note == 'си':
+            print('си')

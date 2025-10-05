@@ -1,0 +1,12 @@
+hs = sorted(map(int, input().split()))
+ms = sorted(map(int, input().split()))
+
+
+def s(x):
+    return sum(map(int, str(x).zfill(2)))
+
+
+for h in hs:
+    for m in ms:
+        if s(h) != s(m):
+            print(f"{h:02d}:{m:02d}")

@@ -1,0 +1,38 @@
+{
+    "title": "Решение задач на классы",
+    "tasks": [
+        {
+            "title": "Задача 1: Ноты",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task1_code.txt"
+        },        {
+            "title": "Задача 2: Но-оты",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task2_code.txt"
+        },        {
+            "title": "Задача 3: Больше нот, хороших и разных",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task3_code.txt"
+        },        {
+            "title": "Задача 4: Точка обыкновенная",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task4_code.txt"
+        },        {
+            "title": "Задача 5: Именованная точка",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task5_code.txt"
+        },        {
+            "title": "Задача 6: Осторожно окрашенные",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task6_code.txt"
+        },        {
+            "title": "Задача 7: Колокольня",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task7_code.txt"
+        },        {
+            "title": "Задача 8: О колоколах подробнее",
+            "solver": "lovpqq",
+            "codePath": "themes/Повторение/lessons/Повторение_Решение_задач_на_классы/task8_code.txt"
+        }
+    ]
+}

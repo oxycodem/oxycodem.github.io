@@ -1,0 +1,18 @@
+f = open("elements.txt", 'r')
+
+a = []
+
+for i in f:
+    try:
+        a.append(int(i))
+    except ValueError:
+        print(0)
+        print("The fifth element has been found!")
+        exit()
+
+try:
+    print(abs(a[0] - a[3]) + abs(a[1] - a[2]))
+except IndexError:
+    print(1000)
+
+print("The fifth element has been found!")
