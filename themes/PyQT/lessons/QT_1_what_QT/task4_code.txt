@@ -1,0 +1,41 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QCheckBox
+
+
+class WidgetsHideNSeek(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.init_ui()
+
+    def init_ui(self):
+        self.setGeometry(300, 300, 400, 300)
+        self.setWindowTitle('Прятки для виджетов')
+
+        self.edits = []
+        self.checkboxes = []
+
+        for i in range(4):
+            edit = QLineEdit(self)
+            edit.setGeometry(50, 50 + i * 40, 150, 30)
+            edit.setPlaceholderText(f'Поле {i + 1}')
+            setattr(self, f'edit{i + 1}', edit)
+            self.edits.append(edit)
+
+            checkbox = QCheckBox(f'Показать поле {i + 1}', self)
+            checkbox.setGeometry(220, 55 + i * 40, 150, 20)
+            checkbox.setChecked(True)
+            checkbox.stateChanged.connect(self.toggle_widget_visibility)
+            setattr(self, f'checkbox{i + 1}', checkbox)
+            self.checkboxes.append(checkbox)
+
+    def toggle_widget_visibility(self):
+        sender = self.sender()
+        index = self.checkboxes.index(sender)
+        self.edits[index].setVisible(sender.isChecked())
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = WidgetsHideNSeek()
+    ex.show()
+    sys.exit(app.exec())

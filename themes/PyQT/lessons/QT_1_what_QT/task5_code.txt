@@ -1,0 +1,53 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QHBoxLayout, QVBoxLayout
+
+
+class Arifmometr(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle('Арифмометр')
+        self.setGeometry(300, 300, 400, 100)
+
+        self.first_value = QLineEdit(self)
+        self.first_value.setText("0")
+
+        self.second_value = QLineEdit(self)
+        self.second_value.setText("0")
+
+        self.result = QLineEdit(self)
+        self.result.setText("0")
+        self.result.setReadOnly(True)
+
+        # Кнопки операций
+        self.add_button = QPushButton('+', self)
+        self.substract_button = QPushButton('-', self)
+        self.multiply_button = QPushButton('*', self)
+
+        self.add_button.clicked.connect(self.on_add)
+        self.substract_button.clicked.connect(self.on_substract)
+        self.multiply_button.clicked.connect(self.on_multiply)
+
+    def on_add(self):
+        a = int(self.first_value.text())
+        b = int(self.second_value.text())
+        self.result.setText(str(a + b))
+
+    def on_substract(self):
+        a = int(self.first_value.text())
+        b = int(self.second_value.text())
+        self.result.setText(str(a - b))
+
+    def on_multiply(self):
+        a = int(self.first_value.text())
+        b = int(self.second_value.text())
+        self.result.setText(str(a * b))
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = Arifmometr()
+    window.show()
+    sys.exit(app.exec())

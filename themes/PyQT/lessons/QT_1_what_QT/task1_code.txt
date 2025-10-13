@@ -1,0 +1,50 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit
+
+
+class WordTrick(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        self.direction_right = True
+
+    def initUI(self):
+        self.setGeometry(300, 300, 400, 200)
+        self.setWindowTitle('Фокус со словами')
+
+        self.first_value = QLineEdit(self)
+        self.first_value.move(50, 80)
+        self.first_value.resize(120, 30)
+
+        self.trick_button = QPushButton('->', self)
+        self.trick_button.move(180, 80)
+        self.trick_button.resize(50, 30)
+
+        self.trick_button.clicked.connect(self.transfer_text)
+
+        self.second_value = QLineEdit(self)
+        self.second_value.move(240, 80)
+        self.second_value.resize(120, 30)
+
+    def transfer_text(self):
+        if self.direction_right:
+            text = self.first_value.text()
+            self.second_value.setText(text)
+            self.first_value.setText('')
+
+            self.trick_button.setText('<-')
+            self.direction_right = False
+        else:
+            text = self.second_value.text()
+            self.first_value.setText(text)
+            self.second_value.setText('')
+
+            self.trick_button.setText('->')
+            self.direction_right = True
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = WordTrick()
+    ex.show()
+    sys.exit(app.exec())

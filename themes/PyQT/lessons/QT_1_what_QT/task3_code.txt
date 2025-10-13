@@ -1,0 +1,61 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QLCDNumber, QLabel
+
+
+class MiniCalculator(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.init_ui()
+
+    def init_ui(self):
+        self.setGeometry(300, 300, 500, 400)
+        self.setWindowTitle('Миникалькулятор')
+
+        QLabel('Первое число:', self).move(50, 30)
+        QLabel('Второе число:', self).move(50, 70)
+
+        self.number_1 = QLineEdit(self)
+        self.number_1.setGeometry(150, 30, 100, 25)
+
+        self.number_2 = QLineEdit(self)
+        self.number_2.setGeometry(150, 70, 100, 25)
+
+        self.calculate_button = QPushButton('->', self)
+        self.calculate_button.setGeometry(280, 50, 50, 30)
+        self.calculate_button.clicked.connect(self.calculate_all)
+
+        labels = ['Сумма:', 'Разность:', 'Произведение:', 'Частное:']
+        for i, label_text in enumerate(labels):
+            QLabel(label_text, self).move(50, 130 + i * 40)
+
+        self.result_sum = QLCDNumber(self)
+        self.result_sum.setGeometry(150, 120, 100, 50)
+
+        self.result_sub = QLCDNumber(self)
+        self.result_sub.setGeometry(150, 160, 100, 50)
+
+        self.result_mul = QLCDNumber(self)
+        self.result_mul.setGeometry(150, 200, 100, 50)
+
+        self.result_div = QLCDNumber(self)
+        self.result_div.setGeometry(150, 240, 100, 50)
+
+    def calculate_all(self):
+        try:
+            num1, num2 = float(self.number_1.text()), float(self.number_2.text())
+
+            self.result_sum.display(f"{num1 + num2:.3f}")
+            self.result_sub.display(f"{num1 - num2:.3f}")
+            self.result_mul.display(f"{num1 * num2:.3f}")
+            self.result_div.display("Error" if num2 == 0 else f"{num1 / num2:.3f}")
+
+        except ValueError:
+            for lcd in [self.result_sum, self.result_sub, self.result_mul, self.result_div]:
+                lcd.display("Error")
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = MiniCalculator()
+    ex.show()
+    sys.exit(app.exec())

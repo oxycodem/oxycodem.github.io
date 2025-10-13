@@ -1,0 +1,38 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit
+
+
+class Evaluator(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.init_ui()
+
+    def init_ui(self):
+        self.setGeometry(300, 300, 450, 200)
+        self.setWindowTitle('Вычисление выражений')
+
+        self.first_value = QLineEdit(self)
+        self.first_value.setGeometry(50, 80, 150, 30)
+
+        self.trick_button = QPushButton('->', self)
+        self.trick_button.setGeometry(210, 80, 50, 30)
+        self.trick_button.clicked.connect(self.calculate_expression)
+
+        self.second_value = QLineEdit(self)
+        self.second_value.setGeometry(270, 80, 150, 30)
+        self.second_value.setReadOnly(True)
+
+    def calculate_expression(self):
+        try:
+            expression = self.first_value.text()
+            result = eval(expression) if expression.strip() else 'Введите выражение'
+            self.second_value.setText(str(result))
+        except Exception:
+            self.second_value.setText('Error')
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Evaluator()
+    ex.show()
+    sys.exit(app.exec())
