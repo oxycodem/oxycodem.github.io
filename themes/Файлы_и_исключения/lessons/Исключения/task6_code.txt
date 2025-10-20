@@ -1,0 +1,23 @@
+import sys
+
+s = input().strip()
+n = int(s)
+
+(len(s) > 4) or (print("There are not enough discharges.") or sys.exit(0))
+assert len(s) > 4
+
+last4 = s[-4:]
+a = s[:-4]
+strr = last4 + a
+num = int(strr)
+
+(len(str(num)) == len(s)) or (print("The number has decreased.") or sys.exit(0))
+assert len(str(num)) == len(s)
+
+summ = sum(int(d) for d in str(num))
+result = num + summ
+
+(result % 2 == 0) or (print("Odd result.") or sys.exit(0))
+assert result % 2 == 0
+
+print(result)

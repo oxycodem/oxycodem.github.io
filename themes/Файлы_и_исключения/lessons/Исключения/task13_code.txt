@@ -1,0 +1,25 @@
+import json
+
+filename = input().strip()
+key_name = input().strip()
+
+try:
+    with open(filename, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    result_parts = []
+    for item in data:
+        value = item[key_name]
+        (isinstance(value, str)) or (_ for _ in ()).throw(TypeError)
+        result_parts.append(value)
+
+    print(" ".join(result_parts))
+
+except FileNotFoundError:
+    print("There is no such file in the directory.")
+except KeyError:
+    print("The key is missing.")
+except TypeError:
+    print("It is impossible to add non-line with line.")
+except ValueError:
+    print("There is no such file in the directory.")

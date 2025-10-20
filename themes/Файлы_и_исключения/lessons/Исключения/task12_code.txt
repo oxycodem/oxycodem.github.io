@@ -1,0 +1,36 @@
+class SpeedLimitError(Exception):
+    pass
+
+
+class DataError(Exception):
+    pass
+
+
+def not_exceed(*args):
+    result = []
+    for d in args:
+        is_settlement = d.get('settlement', False)
+        limit = d.get('limit')
+        speed = d['speed']
+        delta = d.get('delta', 0)
+        fine = d['fine']
+
+        if fine == 0:
+            raise DataError("Error in data.")
+
+        if limit is None:
+            if is_settlement:
+                limit = 60
+            else:
+                limit = 90
+
+        if is_settlement and limit > 60:
+            raise SpeedLimitError("Speed limit controversy.")
+
+        allowed_speed = limit + delta
+        if speed > allowed_speed:
+            result.append(fine)
+        else:
+            result.append(0)
+
+    return result

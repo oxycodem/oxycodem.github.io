@@ -1,0 +1,11 @@
+import sys
+import re
+
+count = 0
+
+for line in sys.stdin:
+    words_starting_with_dalek = re.findall(r'\bдалек\w*', line.lower())
+    if words_starting_with_dalek:
+        count += 1
+
+print(count)

@@ -1,0 +1,40 @@
+n = int(input())
+used_boxes = set()
+max_number_for_base = {}
+
+for _ in range(n):
+    box = input().strip()
+    local_part = box.replace('@untitled.py', '')
+    used_boxes.add(box)
+
+    i = len(local_part) - 1
+    num_str = ""
+    while i >= 0 and local_part[i].isdigit():
+        num_str = local_part[i] + num_str
+        i -= 1
+
+    if num_str:
+        base_name = local_part[:i + 1]
+        num = int(num_str)
+        max_number_for_base[base_name] = max(max_number_for_base.get(base_name, 0), num)
+
+m = int(input())
+for _ in range(m):
+    name_surname = input().strip()
+    base_local_part = name_surname
+
+    base_email = f"{base_local_part}@untitled.py"
+    if base_email not in used_boxes:
+        print(base_email)
+        used_boxes.add(base_email)
+    else:
+        start_num = max_number_for_base.get(base_local_part, 0) + 1
+        num = start_num
+        while True:
+            candidate_email = f"{base_local_part}{num}@untitled.py"
+            if candidate_email not in used_boxes:
+                print(candidate_email)
+                used_boxes.add(candidate_email)
+                max_number_for_base[base_local_part] = max(max_number_for_base.get(base_local_part, 0), num)
+                break
+            num += 1

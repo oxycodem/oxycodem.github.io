@@ -1,0 +1,139 @@
+import random
+
+
+def main():
+    print("Добро пожаловать в Сапёра!")
+    rows = int(input("Введите количество строк: "))
+    cols = int(input("Введите количество столбцов: "))
+    mines = int(input("Введите количество мин: "))
+
+    if mines >= rows * cols:
+        print("Количество мин должно быть меньше, чем клеток на поле.")
+        return
+
+    field = [[0] * cols for _ in range(rows)]
+    revealed = [[False] * cols for _ in range(rows)]
+    marked = [[""] * cols for _ in range(cols)]
+    first_move = True
+
+    while True:
+        for r in range(rows):
+            row_str = ""
+            for c in range(cols):
+                if marked[r][c] == 'F':
+                    row_str += "[F]"
+                elif marked[r][c] == '?':
+                    row_str += "[?]"
+                elif revealed[r][c]:
+                    val = field[r][c]
+                    if val == -1:
+                        row_str += "[X]"
+                    elif val == 0:
+                        row_str += "   "
+                    else:
+                        row_str += f" {val} "
+                else:
+                    row_str += "[ ]"
+            print(row_str)
+        print()
+
+        user_input = input("Введите строку, столбец и действие (f/?/o) или 'help' для справки: ").split()
+
+        if user_input[0] == 'help':
+            print("Формат ввода: <строка> <столбец> [действие]")
+            print("  строка, столбец: номера от 1")
+            print("  действие: 'f' - флажок, '?' - вопрос, 'o' - открыть (по умолчанию)")
+            print("  Пример: 1 2 f")
+            continue
+
+        try:
+            if len(user_input) < 2:
+                print("Неверный формат. Введите 'help' для справки.")
+                continue
+
+            r = int(user_input[0]) - 1
+            c = int(user_input[1]) - 1
+            action = user_input[2] if len(user_input) > 2 else 'o'
+
+            if not (0 <= r < rows and 0 <= c < cols):
+                print("Координаты вне диапазона.")
+                continue
+
+            if marked[r][c] and action == 'o':
+                print("Клетка помечена.")
+                continue
+
+            if action == 'f':
+                marked[r][c] = 'F' if marked[r][c] != 'F' else ''
+                continue
+            elif action == '?':
+                marked[r][c] = '?' if marked[r][c] != '?' else ''
+                continue
+            if first_move:
+                all_cells = [(i, j) for i in range(rows) for j in range(cols) if (i, j) != (r, c)]
+                mine_positions = random.sample(all_cells, mines)
+                for mr, mc in mine_positions:
+                    field[mr][mc] = -1
+                for i in range(rows):
+                    for j in range(cols):
+                        if field[i][j] != -1:
+                            count = 0
+                            for dr in [-1, 0, 1]:
+                                for dc in [-1, 0, 1]:
+                                    if dr == 0 and dc == 0:
+                                        continue
+                                    ni, nj = i + dr, j + dc
+                                    if 0 <= ni < rows and 0 <= nj < cols and field[ni][nj] == -1:
+                                        count += 1
+                            field[i][j] = count
+                first_move = False
+
+            if field[r][c] == -1:
+                print("Вы подорвались на мине!")
+                for i in range(rows):
+                    for j in range(cols):
+                        if field[i][j] == -1:
+                            revealed[i][j] = True
+                for r_show in range(rows):
+                    row_str = ""
+                    for c_show in range(cols):
+                        val = field[r_show][c_show]
+                        if val == -1:
+                            row_str += "[*]"
+                        elif revealed[r_show][c_show]:
+                            if val == 0:
+                                row_str += "   "
+                            else:
+                                row_str += f" {val} "
+                        else:
+                            row_str += "[ ]"
+                    print(row_str)
+                break
+                
+            def reveal(r, c):
+                if not (0 <= r < rows and 0 <= c < cols) or revealed[r][c]:
+                    return
+                revealed[r][c] = True
+                if field[r][c] == 0:
+                    for dr in [-1, 0, 1]:
+                        for dc in [-1, 0, 1]:
+                            if dr == 0 and dc == 0:
+                                continue
+                            reveal(r + dr, c + dc)
+
+            reveal(r, c)
+            hidden_count = sum(1 for i in range(rows) for j in range(cols) if not revealed[i][j])
+            if hidden_count == mines:
+                print("Вы выиграли!")
+                break
+
+        except ValueError:
+            print("Ошибка: введите числа для строки и столбца. Введите 'help' для справки.")
+        except IndexError:
+            print("Ошибка: неверный формат команды. Введите 'help' для справки.")
+        except Exception:
+            print("Ошибка ввода. Введите 'help' для справки.")
+
+
+if __name__ == "__main__":
+    main()

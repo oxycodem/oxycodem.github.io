@@ -1,0 +1,12 @@
+import csv
+
+with open('beaches.csv', encoding='utf-8') as f:
+    reader = csv.DictReader(f, delimiter=';')
+    for row in reader:
+        equipped = int(row['equipped'])
+        rescuers = int(row['rescuers'])
+        pollution = float(row['pollution'])
+        temperature = float(row['temperature'])
+        
+        if (equipped == 1 and rescuers == 1 and pollution <= 0.5 and temperature >= 18):
+            print(row['beach'])

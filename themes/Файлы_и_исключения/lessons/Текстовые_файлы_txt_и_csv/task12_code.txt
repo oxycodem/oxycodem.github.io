@@ -1,0 +1,44 @@
+grid = []
+with open('strikes.csv', 'r') as f:
+    for line in f:
+        row = list(map(int, line.strip().split('\t')))
+        grid.append(row)
+
+if not grid:
+    with open('predict.csv', 'w') as f:
+        pass
+    exit()
+
+rows = len(grid)
+cols = len(grid[0])
+result = []
+
+for i in range(rows):
+    row_probs = []
+    for j in range(cols):
+        total = 0
+        count = 0
+        for di in (-1, 0, 1):
+            for dj in (-1, 0, 1):
+                if di == 0 and dj == 0:
+                    continue
+                ni, nj = i + di, j + dj
+                if 0 <= ni < rows and 0 <= nj < cols:
+                    total += grid[ni][nj]
+                    count += 1
+        
+        if count == 0:
+            prob = 0.0
+        else:
+            prob = total / count
+        if grid[i][j] == 1:
+            prob = max(0.0, prob - 0.1)
+        
+        prob = round(prob, 3)
+        row_probs.append(str(prob))
+    
+    result.append(row_probs)
+
+with open('predict.csv', 'w') as f:
+    for row in result:
+        f.write(';'.join(row) + '\n')

@@ -1,0 +1,19 @@
+import sys
+from collections import defaultdict
+
+fname = input().strip().split('; ')
+filesb = defaultdict(set)
+
+for i, a in enumerate(fname):
+    try:
+        with open(a, 'r', encoding='utf-8') as f:
+            for line in f:
+                name = line.strip()
+                if name:
+                    filesb[name].add(i)
+    except FileNotFoundError:
+        continue
+
+for butterfly, files in filesb.items():
+    if len(files) == 2:
+        print(butterfly)

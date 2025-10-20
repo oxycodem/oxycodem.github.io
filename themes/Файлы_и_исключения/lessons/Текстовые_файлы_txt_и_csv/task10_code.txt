@@ -1,0 +1,19 @@
+import os
+
+
+file_path = os.path.join('black', 'another_black', 'cats_black_and_other.txt')
+with open(file_path, 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+valid_words = []
+for line in lines:
+    if 'cat' in line.lower():
+        words = line.split()
+        for word in words:
+            if (len(word) > 0 and word[0].isupper()):
+                word_body = word.rstrip('.,!?;:')
+                if word_body[1:].islower() or len(word_body) == 1:
+                    valid_words.append(word)
+valid_words.sort()
+with open('cats.txt', 'w', encoding='utf-8') as output_file:
+    for word in valid_words:
+        output_file.write(word + '\n')

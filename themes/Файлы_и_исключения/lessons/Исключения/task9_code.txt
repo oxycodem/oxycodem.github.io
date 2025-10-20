@@ -1,0 +1,17 @@
+def get_middle_char(s):
+    idx = (len(s) - 1) // 2
+    return s[idx]
+
+
+lines = []
+try:
+    for _ in range(6):
+        line = input()
+        lines.append(line)
+
+    result = ''.join(get_middle_char(line) for line in lines)
+    print(result)
+
+except EOFError:
+    count = len(lines)
+    print(f"Error EOF, {count} of lines entered.")

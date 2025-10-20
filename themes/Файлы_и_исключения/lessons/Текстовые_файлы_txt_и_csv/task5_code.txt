@@ -1,0 +1,17 @@
+control_number = int(input())
+n = int(input())
+
+holes = []
+for i in range(n):
+    km, stripe, area, depth = input().split()
+    km = int(km)
+    stripe = int(stripe)
+    area = int(area)
+    depth = int(depth)
+    priority = 1 if area * depth > control_number else 0
+    holes.append((i + 1, km, stripe, area, depth, priority))
+
+with open("holes.csv", "w") as f:
+    f.write("no;kilometer;stripe;area;depth;priority\n")
+    for hole in holes:
+        f.write(";".join(map(str, hole)) + "\n")

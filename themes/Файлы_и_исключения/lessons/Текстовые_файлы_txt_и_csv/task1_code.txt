@@ -1,0 +1,8 @@
+from math import *
+
+s = input()
+
+for x in range(201):
+    x = x / 100
+    with open('function.txt', 'a') as f:
+        f.write(f'{x}	{round(eval(s), 3)}\n')

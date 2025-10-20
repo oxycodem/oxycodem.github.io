@@ -1,0 +1,31 @@
+import sys
+import re
+
+
+text = sys.stdin.read()
+parts = re.split(r'([.?!])', text)
+declarative_words = set()
+interrogative_words = set()
+exclamatory_words = set()
+
+i = 0
+while i < len(parts) - 1:
+    sentence = parts[i].strip()
+    punct = parts[i + 1]
+    i += 2
+
+    if not sentence:
+        continue
+
+    words = [word.lower() for word in sentence.split() if word]
+
+    if punct == '.':
+        declarative_words.update(words)
+    elif punct == '?':
+        interrogative_words.update(words)
+    elif punct == '!':
+        exclamatory_words.update(words)
+
+result = declarative_words & interrogative_words - exclamatory_words
+output = ' '.join(sorted(result))
+print(output)

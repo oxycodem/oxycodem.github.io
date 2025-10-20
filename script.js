@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>${task.title}</h4>
                         <p>${task.solver}</p>
                         <button class="code-toggle">Показать код</button>
+                        <button class="copy-button">Скопировать</button>
                         <div class="code-content">
                             <pre>${task.code}</pre>
                         </div>
@@ -207,12 +208,29 @@ document.addEventListener('DOMContentLoaded', () => {
         backButton.style.display = 'block';
         document.querySelectorAll('.code-toggle').forEach(button => {
             button.addEventListener('click', (event) => {
-                const codeContent = event.target.nextElementSibling;
+                const codeContent = event.target.parentElement.querySelector('.code-content');
                 codeContent.classList.toggle('active');
                 if (codeContent.classList.contains('active')) {
                     event.target.textContent = 'Скрыть код';
                 } else {
                     event.target.textContent = 'Показать код';
+                }
+            });
+        });
+
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const codeContent = event.target.parentElement.querySelector('.code-content pre');
+                if (codeContent) {
+                    navigator.clipboard.writeText(codeContent.innerText).then(() => {
+                        event.target.textContent = 'Скопировано!';
+                        setTimeout(() => {
+                            event.target.textContent = 'Скопировать';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Ошибка при копировании кода:', err);
+                        alert('Не удалось скопировать код.');
+                    });
                 }
             });
         });

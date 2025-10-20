@@ -1,0 +1,5 @@
+with open('data.bin', 'rb') as fin:
+    data = fin.read(100)
+
+with open('part.dat', 'wb') as fout:
+    fout.write(data)

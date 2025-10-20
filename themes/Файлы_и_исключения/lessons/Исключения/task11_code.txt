@@ -1,0 +1,13 @@
+class NoSubstringError(Exception):
+    pass
+
+
+def chirp(*args, **kwargs):
+    if 'taboo' not in kwargs:
+        raise NoSubstringError("No named argument.")
+    taboo = kwargs['taboo']
+    for arg in args:
+        if not isinstance(arg, str):
+            raise TypeError("The argument is not a string.")
+    filtered = [s for s in args if taboo.lower() not in s.lower()]
+    return sorted(filtered)

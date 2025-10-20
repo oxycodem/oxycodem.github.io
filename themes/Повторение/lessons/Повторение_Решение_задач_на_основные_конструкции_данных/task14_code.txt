@@ -1,0 +1,17 @@
+import sys
+import re
+
+
+forms = {
+    'далек', 'далека', 'далеку', 'далеком', 'далеке',
+    'далеки', 'далеков', 'далекам', 'далеками', 'далеках'
+}
+
+count = 0
+
+for line in sys.stdin:
+    words = re.findall(r'[а-яё-]+', line.lower())
+    if any(word in forms for word in words):
+        count += 1
+
+print(count)

@@ -1,0 +1,13 @@
+import sys
+
+
+for line in sys.stdin:
+    line = line.strip()
+    try:
+        number, base_str = line.split()
+        base = int(base_str)
+        _ = 2 <= base <= 36
+        decimal_value = int(number, base)
+        print(f"{number}({base}) = {decimal_value}")
+    except (ValueError, TypeError, Exception):
+        continue

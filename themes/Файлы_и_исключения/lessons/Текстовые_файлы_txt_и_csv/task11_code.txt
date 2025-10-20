@@ -1,0 +1,31 @@
+def check_line(numbers):
+    from collections import Counter
+    count = Counter(numbers)
+    triples = [num for num, cnt in count.items() if cnt == 3]
+    others = [num for num, cnt in count.items() if cnt == 1]
+    if len(triples) != 1 or len(others) != 3:
+        return False
+    repeated = triples[0]
+    avg_others = sum(others) / 3
+    
+    if avg_others < repeated:
+        return False
+    
+    if max(numbers) % min(numbers) == 0:
+        return False
+    return True
+
+
+min_sum = float('inf')
+a = None
+
+with open('numbers.txt', 'r') as f:
+    for line_num, line in enumerate(f, start=1):
+        numbers = list(map(int, line.split()))
+        if check_line(numbers):
+            current_sum = sum(numbers)
+            if current_sum < min_sum:
+                min_sum = current_sum
+                a = line_num
+
+print(a)

@@ -1,0 +1,25 @@
+def prime_divisors(n):
+    divisors = []
+    d = 2
+    while d * d <= n and len(divisors) < 5:
+        while n % d == 0:
+            if not divisors or divisors[-1] != d:
+                divisors.append(d)
+            n //= d
+            if len(divisors) == 5:
+                break
+        d += 1
+    if n > 1 and len(divisors) < 5:
+        divisors.append(n)
+    return divisors
+
+
+a = int(input().strip())
+b = int(input().strip())
+
+with open('divisors.csv', 'w', encoding='utf-8') as f:
+    f.write("number div1 div2 div3 div4 div5\n")
+    for num in range(a, b + 1):
+        divs = prime_divisors(num)
+        line = [str(num)] + [str(d) for d in divs]
+        f.write(" ".join(line) + "\n")

@@ -1,0 +1,43 @@
+a = []
+b = []
+
+with open('storm.csv', 'r') as f:
+    for line in f:
+        nums = list(map(int, line.strip().split(',')))
+        b.append(nums)
+        a.extend(nums)
+
+if not a:
+    print("0")
+    exit()
+
+mx = max(a)
+ld = mx % 10
+
+cnt = 0
+mn = float('inf')
+
+for w in b:
+    from collections import Counter
+    c = Counter(w)
+    dup = [x for x, k in c.items() if k == 2]
+    uni = [x for x, k in c.items() if k == 1]
+    
+    if len(dup) != 1 or len(uni) != 4:
+        continue
+        
+    ok = any(x % 10 == ld for x in w)
+    if not ok:
+        continue
+        
+    ev = sum(1 for x in w if x % 2 == 0)
+    if ev < 3:
+        continue
+        
+    cnt += 1
+    mn = min(mn, min(w))
+
+if cnt == 0:
+    print("0")
+else:
+    print(cnt, mn)

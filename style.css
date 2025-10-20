@@ -205,3 +205,22 @@ main {
     border: 1px solid #666;
     display: block;
 }
+
+.copy-button {
+    background-color: #666;
+    color: #0a0a0a;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(102,102,102,0.7);
+}

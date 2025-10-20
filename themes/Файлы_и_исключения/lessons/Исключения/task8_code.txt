@@ -1,0 +1,20 @@
+rus = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+eng = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+lang = input().strip()
+num_str = input().strip()
+
+try:
+    num = int(num_str)
+    if lang == 'RUS':
+        alphabet = rus
+    elif lang == 'ENG':
+        alphabet = eng
+    else:
+        1 / 0
+
+    letter = alphabet[num - 1]
+    print(f"Буква {letter} стоит в алфавите {lang} под номером {num}.")
+
+except (ValueError, IndexError, ZeroDivisionError):
+    print(f"Буквы под номером {num_str if 'num' not in locals() else num} в алфавите {lang} нет.")
